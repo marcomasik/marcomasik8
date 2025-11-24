@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="the-name-of-myself">
       Marco Masik
     </div>
   );
