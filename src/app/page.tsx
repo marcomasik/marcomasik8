@@ -1,7 +1,8 @@
-export default function Home() {
+export default function StartPage() {
   return (
-    <div className="the-name-of-myself">
-      Marco Masik
+    <div>
+      <h1>Marco Masik</h1>
+      <p>Developer</p>
     </div>
   );
 }
