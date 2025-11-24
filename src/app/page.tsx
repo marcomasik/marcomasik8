@@ -1,8 +1,9 @@
 export default function StartPage() {
   return (
-    <div>
-      <h1>Marco Masik</h1>
-      <p>Developer</p>
+    <div className="start-page-container">
+      <div className="video-box-container">
+        <video src="videos/ocean_waves.mp4" autoPlay playsInline muted loop />
+      </div>
     </div>
   );
 }
