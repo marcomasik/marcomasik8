@@ -25,25 +25,31 @@
 				font-weight: bolder;
 				margin-block-start: 0;
 			    margin-block-end: 0;
-			    margin-top: 0.8em;
+			    margin-top: 0.5em;
                 text-align: center;
             }
-            .subtitle {
+            .subtitle-container {
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                .subtitle {
+            
                 font-weight: 400;
-                font-size: 40px;
+                //font-size: 40px;
 				margin-block-start: 0;
 			    margin-block-end: 0;
 			    margin-top: 1em;
 			    text-align: center;
+                }
             }
             .start-page-menu {
                 position: absolute;
-				width: 100%;
+				width: 15%;
 				padding-inline-start: 0;
 				margin-left: 0.5em;
 				bottom: 0;
-                margin-bottom: 1em;
-                font-size: 36px;
+                margin-bottom: 3em;
+                //font-size: 36px;
                 //font-weight: 400;
                 li {
                     list-style-type: none;
