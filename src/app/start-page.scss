@@ -12,6 +12,7 @@
 			height: calc(100% - 8em);
 			border-radius: 2em;
 			object-fit: cover;
+            filter: brightness(0.9) contrast(1.1);
         }
         .text-container {
             position: relative;
