@@ -1,8 +1,11 @@
-export default function ContactPage() {
-  return (
-    <div>
-      <h1>Contact</h1>
-      <p>Get in touch with me here.</p>
-    </div>
-  );
+"use client";
+
+import { useEffect } from 'react';
+
+export default function ContactRedirect() {
+  useEffect(() => {
+    window.location.replace('/#contact');
+  }, []);
+
+  return <div>Redirecting...</div>;
 }

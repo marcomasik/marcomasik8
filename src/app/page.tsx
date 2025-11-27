@@ -31,6 +31,14 @@ export default function StartPage() {
       observer.observe(section);
     });
 
+    const hash = window.location.pathname.slice(1);
+    if (hash && hash !== '') {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
     return () => observer.disconnect();
   }, []);
 
@@ -62,15 +70,24 @@ export default function StartPage() {
       </section>
 
       <section id="works" className="section">
-        <WorksPage />
+        <div>
+          <h1>Works</h1>
+          <p>My portfolio and projects will be displayed here.</p>
+        </div>
       </section>
 
       <section id="cv" className="section">
-        <CVPage />
+        <div>
+          <h1>CV</h1>
+          <p>My curriculum vitae and experience will be displayed here.</p>
+        </div>
       </section>
 
       <section id="contact" className="section">
-        <ContactPage />
+        <div>
+          <h1>Contact</h1>
+          <p>Get in touch with me here.</p>
+        </div>
       </section>
     </>
 

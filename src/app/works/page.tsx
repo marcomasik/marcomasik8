@@ -1,8 +1,12 @@
-export default function WorksPage() {
-  return (
-    <div>
-      <h1>Works</h1>
-      <p>My portfolio and projects will be displayed here.</p>
-    </div>
-  );
+"use client";
+
+import { useEffect } from 'react';
+
+export default function WorksRedirect() {
+  useEffect(() => {
+    // Redirect to main page with hash
+    window.location.replace('/#works');
+  }, []);
+
+  return <div>Redirecting...</div>;
 }

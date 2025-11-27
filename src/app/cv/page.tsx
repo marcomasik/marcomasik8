@@ -1,8 +1,11 @@
-export default function CVPage() {
-  return (
-    <div>
-      <h1>CV</h1>
-      <p>My curriculum vitae and experience will be displayed here.</p>
-    </div>
-  );
+"use client";
+
+import { useEffect } from 'react';
+
+export default function CVRedirect() {
+  useEffect(() => {
+    window.location.replace('/#cv');
+  }, []);
+
+  return <div>Redirecting...</div>;
 }
