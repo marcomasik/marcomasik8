@@ -3,15 +3,46 @@
 import "./start-page.scss";
 import { Textfit } from 'react-textfit';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import WorksPage from './works/page';
 import CVPage from './cv/page';
 import ContactPage from './contact/page';
 
+const MenuBar = ({ isVisible }: { isVisible: boolean }) => (
+  <nav className={`menu-bar-container ${isVisible ? 'visible' : 'hidden'}`}>
+    <div className="menu-bar-container-inner">
+      <div className="menu-bar-logo">MARCO MASIK</div>
+      <ul className="menu-bar-list">
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+);
 
 export default function StartPage() {
   const router = useRouter();
+  const [showMenuBar, setShowMenuBar] = useState(false);
+
+  useEffect(() => {
+    const startSection = document.getElementById('start');
+    
+    const menuBarObserver = new IntersectionObserver(
+      ([entry]) => {
+        // Show nav when start section is NOT visible
+        setShowMenuBar(!entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (startSection) {
+      menuBarObserver.observe(startSection);
+    }
+
+    return () => menuBarObserver.disconnect();
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,7 +50,6 @@ export default function StartPage() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const sectionId = entry.target.id;
-            // Update URL without page reload
             window.history.pushState(null, '', `/${sectionId === 'start' ? '' : sectionId}`);
           }
         });
@@ -44,6 +74,7 @@ export default function StartPage() {
 
   return (
     <>
+      <MenuBar isVisible={showMenuBar} />
       <section id="start" className="section">
         <div className="start-page-container">
           <div className="video-box-container">
