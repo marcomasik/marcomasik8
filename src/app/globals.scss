@@ -24,7 +24,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: #ffffff;
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: transform 0.3s ease;
@@ -38,24 +38,23 @@ body {
   }
   .menu-bar-container-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
     .menu-bar-logo {
-      color: white;
+      color: #000000;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
     .menu-bar-list{
       display: flex;
       list-style: none;
       gap: 2rem;
-      margin: 0;
+      margin: 0 0 0 2rem;
       padding: 0;
       a {
-        color: white;
+        color: #000000;
         text-decoration: none;
         transition: opacity 0.3s;
         &:hover {
