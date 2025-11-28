@@ -44,6 +44,10 @@ export default function StartPage() {
       observer.observe(section);
     });
 
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     const hash = window.location.pathname.slice(1);
     if (hash && hash !== '') {
       const element = document.getElementById(hash);
@@ -51,8 +55,6 @@ export default function StartPage() {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-
-    return () => observer.disconnect();
   }, []);
 
   return (

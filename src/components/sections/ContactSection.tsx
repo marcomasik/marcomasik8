@@ -1,9 +1,10 @@
-import ContactPage from '../../app/contact/page';
-
 export const ContactSection = () => {
   return (
     <section id="contact" className="section">
-      <ContactPage />
+      <div>
+        <h1>Contact</h1>
+        <p>Get in touch with me here.</p>
+      </div>
     </section>
   );
 };
