@@ -1,1 +1,7 @@
 export { MenuBar } from './MenuBar/MenuBar';
+
+// Sections
+export { StartSection } from './sections/StartSection';
+export { WorksSection } from './sections/WorksSection';
+export { CVSection } from './sections/CVSection';
+export { ContactSection } from './sections/ContactSection';
