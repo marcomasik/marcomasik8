@@ -8,19 +8,7 @@ import { useRouter } from 'next/navigation';
 import WorksPage from './works/page';
 import CVPage from './cv/page';
 import ContactPage from './contact/page';
-
-const MenuBar = ({ isVisible }: { isVisible: boolean }) => (
-  <nav className={`menu-bar-container ${isVisible ? 'visible' : 'hidden'}`}>
-    <div className="menu-bar-container-inner">
-      <div className="menu-bar-logo">MARCO MASIK</div>
-      <ul className="menu-bar-list">
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
-);
+import { MenuBar } from '../components';
 
 export default function StartPage() {
   const router = useRouter();
