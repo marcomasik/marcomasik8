@@ -7,6 +7,11 @@
         width: calc(100% - 12em);
         height: calc(100% - 8em);
         padding: 4em 6em 4em 6em;
+        .works-container-content {
+          h2 {
+            padding: .5em 0 .5em 0;
+          }
+        }
       }
     }
 }
