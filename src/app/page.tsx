@@ -1,6 +1,5 @@
 "use client";
 
-import "./start-page.scss";
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { MenuBar, StartSection, WorksSection, CVSection, ContactSection } from '../components';

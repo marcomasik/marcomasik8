@@ -1,4 +1,5 @@
 import { Textfit } from 'react-textfit';
+import "./start-section.scss";
 
 export const StartSection = () => {
   return (
