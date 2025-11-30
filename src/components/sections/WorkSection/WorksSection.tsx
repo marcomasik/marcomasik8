@@ -8,11 +8,19 @@ export const WorksSection = () => {
           <div className="works-container-inner">
             <div className="works-container-content">
               <h2>Full time jobs</h2>
-              <div className="full-time-jobs-container">
-                <WorkItem />
-                <WorkItem />
+              <div className="work-items-container">
+                <WorkItem size="big" color="aquamarine" />
+                <WorkItem size="big" color="aquamarine" />
+                
               </div>
               <h2>Freelance website projects</h2>
+              <div className="work-items-container">
+              <WorkItem size="small" color="lightblue" />
+              <WorkItem size="small" color="lightblue" />
+              <WorkItem size="small" color="lightblue" />
+              <WorkItem size="small" color="lightblue" />
+              </div>
+
             </div>
           </div>
         </div>

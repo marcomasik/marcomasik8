@@ -1,6 +1,13 @@
 .work-item {
-    width: 350px;
-    height: 216px;
     border-radius: 2em;
-    background-color: aquamarine;
+    
+    &--big {
+        width: 350px;
+        height: 216px;
+    }
+    
+    &--small {
+        width: 175px;
+        height: 108px;
+    }
 }

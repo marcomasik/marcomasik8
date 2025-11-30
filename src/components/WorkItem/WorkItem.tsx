@@ -1,8 +1,16 @@
 import "./work-item.scss";
 
-export const WorkItem = () => {
+interface WorkItemProps {
+  size: 'big' | 'small';
+  color: string;
+}
+
+export const WorkItem = ({ size, color }: WorkItemProps) => {
   return (
-    <div className="work-item">
+    <div 
+      className={`work-item work-item--${size}`}
+      style={{ backgroundColor: color }}
+    >
       <div className="work-item-content">
         <h3 className="work-item-title">Work Item</h3>
       </div>
