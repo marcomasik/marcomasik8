@@ -1,4 +1,5 @@
 import "./works-section.scss";
+import { WorkItem } from "@/components/WorkItem/WorkItem";
 
 export const WorksSection = () => {
   return (
@@ -7,6 +8,10 @@ export const WorksSection = () => {
           <div className="works-container-inner">
             <div className="works-container-content">
               <h2>Full time jobs</h2>
+              <div className="full-time-jobs-container">
+                <WorkItem />
+                <WorkItem />
+              </div>
               <h2>Freelance website projects</h2>
             </div>
           </div>
