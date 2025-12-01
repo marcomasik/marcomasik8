@@ -12,7 +12,7 @@ export const WorkItem = ({ size, color }: WorkItemProps) => {
       style={{ backgroundColor: color }}
     >
       <div className="work-item-content">
-        <h3 className="work-item-title">Work Item</h3>
+        <h3 className="work-item-title"></h3>
       </div>
     </div>
   );
