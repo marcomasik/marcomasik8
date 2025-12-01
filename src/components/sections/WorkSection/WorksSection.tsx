@@ -9,7 +9,7 @@ export const WorksSection = () => {
             <div className="works-container-content">
               <h2>Full time jobs</h2>
               <div className="work-items-container">
-                <WorkItem size="big" color="#0a3761" />
+                <WorkItem size="big" color="#0a3761" image="/images/logos/idealo.png" />
                 <WorkItem size="big" color="aquamarine" />
                 
               </div>
