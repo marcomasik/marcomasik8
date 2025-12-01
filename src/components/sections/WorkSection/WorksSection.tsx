@@ -10,7 +10,7 @@ export const WorksSection = () => {
               <h2>Full time jobs</h2>
               <div className="work-items-container">
                 <WorkItem size="big" color="#0a3761" image="/images/logos/idealo.png" />
-                <WorkItem size="big" color="aquamarine" />
+                <WorkItem size="big" color="#000000" image="/images/logos/miles.png" />
                 
               </div>
               <h2>Freelance website projects</h2>
