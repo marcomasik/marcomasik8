@@ -1,16 +1,20 @@
 import "./work-item.scss";
 
 interface WorkItemProps {
+  id: string;
   size: 'big' | 'small';
   color: string;
   image?: string;
+  isExpanded: boolean;
+  onClick: () => void;
 }
 
-export const WorkItem = ({ size, color, image }: WorkItemProps) => {
+export const WorkItem = ({ id, size, color, image, isExpanded, onClick }: WorkItemProps) => {
   return (
     <div 
-      className={`work-item work-item--${size}`}
+      className={`work-item work-item--${size} ${isExpanded ? 'work-item--expanded' : ''}`}
       style={{ backgroundColor: color }}
+      onClick={onClick}
     >
       <div className="work-item-content">
         {image && (
@@ -21,6 +25,16 @@ export const WorkItem = ({ size, color, image }: WorkItemProps) => {
           />
         )}
         <h3 className="work-item-title"></h3>
+        
+        {isExpanded && (
+          <div className="work-item-expanded-content">
+            <h4>Expanded Content for {id}</h4>
+            <p>This is the detailed view of the work item. You can add more information here about the company, role, projects, etc.</p>
+            <button onClick={(e) => { e.stopPropagation(); onClick(); }}>
+              Close
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

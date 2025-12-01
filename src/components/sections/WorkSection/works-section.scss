@@ -7,6 +7,7 @@
         width: calc(100% - 12em);
         height: calc(100% - 8em);
         padding: 4em 6em 4em 6em;
+        position: relative;
         .works-container-content {
           h2 {
             padding: .5em 0 .5em 0;
@@ -15,6 +16,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1em;
+            position: relative;
+            margin-bottom: 2em;
           }
         }
       }
