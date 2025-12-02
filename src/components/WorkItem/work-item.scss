@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
     position: relative;
     
     &--big {
@@ -18,13 +18,9 @@
     }
     
     &--expanded {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
+        width: 60%;
+        height: 216px;
         z-index: 10;
-        border-radius: 1em;
     }
     
     &:hover:not(.work-item--expanded) {
@@ -61,6 +57,7 @@
     color: white;
     text-align: left;
     width: 100%;
+    height: 216px;
     
     h4 {
         margin-bottom: 0.5rem;

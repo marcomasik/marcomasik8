@@ -28,8 +28,6 @@ export const WorkItem = ({ id, size, color, image, isExpanded, onClick }: WorkIt
         
         {isExpanded && (
           <div className="work-item-expanded-content">
-            <h4>Expanded Content for {id}</h4>
-            <p>This is the detailed view of the work item. You can add more information here about the company, role, projects, etc.</p>
             <button onClick={(e) => { e.stopPropagation(); onClick(); }}>
               Close
             </button>
