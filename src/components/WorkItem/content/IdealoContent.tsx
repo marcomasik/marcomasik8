@@ -42,7 +42,16 @@ export const IdealoContent = () => {
                 <li>Collaborated with stakeholders across departments  </li>
               </ul>
           </div>
-
+          <div className="work-item-case-study-blob">
+            <h5>Solution</h5>
+            <div className="case-study-blob-row">
+              <div className="case-study-blob-image-container">
+                <img src="/images/localOffers.png" alt="Local Offers" />
+              </div>
+              <p>We worked iteratively with Kanban and A/B tests 
+              to protect Idealo’s core KPIs while improving UX.</p>
+            </div>
+          </div>
 
         </div>
       </div>
