@@ -1,0 +1,16 @@
+.work-item-expanded-content {
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .work-item-expanded-content-header {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        li:first-child {
+            list-style: none;
+        }
+    }
+}

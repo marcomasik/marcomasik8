@@ -1,12 +1,16 @@
+import "./idealo-content.scss";
+
 export const IdealoContent = () => {
     return (
       <div className="work-item-expanded-content">
-        <h4>idealo internet GmbH</h4>
-        <p>Price comparison platform - worked as Frontend Developer</p>
-        <ul>
-          <li>React & TypeScript development</li>
-          <li>E-commerce features</li>
-          <li>Performance optimization</li>
+        <h4>Frontend Engineer // Idealo Internet GmbH, Berlin</h4>
+        <ul className="work-item-expanded-content-header">
+          <li>Java</li>
+          <li>React</li>
+          <li>Astro.js</li>
+          <li>AWS</li>
+          <li>AB Testing</li>
+          <li>UX</li>
         </ul>
       </div>
     );
