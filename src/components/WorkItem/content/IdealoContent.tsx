@@ -13,6 +13,7 @@ export const IdealoContent = () => {
           <li>UX</li>
         </ul>
         <div className="work-item-expanded-case-study-container">
+
           <div className="work-item-case-study-blob">
             <h5>Context 🧩</h5>
             <div className="case-study-blob-row">
@@ -30,6 +31,18 @@ export const IdealoContent = () => {
             </ul>
         
           </div>
+          <div className="work-item-case-study-blob">
+            <h5>My Role 🧐</h5>
+              
+              <p>Sole Frontend Engineer in a cross-functional team.</p>
+              <ul>
+                <li>Developed prototypes, A/B tests, and production features  </li>
+                <li>Migrated frontend from JSP/jQuery to React & Astro.js  </li>
+                <li>Supported AWS migration and UX planning  </li>
+                <li>Collaborated with stakeholders across departments  </li>
+              </ul>
+          </div>
+
 
         </div>
       </div>
