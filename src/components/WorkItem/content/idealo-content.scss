@@ -43,7 +43,31 @@
                     }
                 }
             }
-
+            h6 {
+                font-size: 12px;
+            }
+            .case-study-impact-container {
+                border: 1px solid #ffffff;
+                border-radius: 2em;
+                display: flex;
+                gap: 50px;
+                padding: .5em 2em;
+                width: fit-content;
+                margin-bottom: 15px;
+                .year-column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .year {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    .value {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
 
         }
     }

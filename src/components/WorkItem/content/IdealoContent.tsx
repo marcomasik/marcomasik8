@@ -51,7 +51,56 @@ export const IdealoContent = () => {
               <p>We worked iteratively with Kanban and A/B tests 
               to protect Idealo’s core KPIs while improving UX.</p>
             </div>
+            <h6>Some of the highlights:</h6>
+            <ul>
+                <li>Local Offers integrated into main offer page (New / Used / Local tabs) </li>
+                <li>Map view with adjustable radius (5–50 km) </li>
+                <li>IP, browser, and manual postcode detection  </li>
+                <li>Ordered by price for consistency  </li>
+                <li>Refactored code, removed jQuery, simplified CI/CD integration</li>
+              </ul>
           </div>
+
+          <div className="work-item-case-study-blob">
+            <h5>Impact 📈</h5>
+            <p>Feature evolved into a permanent, profitable Idealo product.</p>
+
+            <h6>Number of lead-outs to local shops (aka 'LOcal Lead Outs'  aka LOLOs):</h6>
+            <div className="case-study-impact-container">
+            <div className="year-column">
+                <div className="year">Year</div>
+                <div className="value">LOLOs</div>
+              </div>
+              <div className="year-column">
+                <div className="year">2021</div>
+                <div className="value">200k</div>
+              </div>
+              <div className="year-column">
+                <div className="year">2022</div>
+                <div className="value">400k</div>
+              </div>
+              <div className="year-column">
+                <div className="year">2023</div>
+                <div className="value">550k</div>
+              </div>
+              <div className="year-column">
+                <div className="year">2024</div>
+                <div className="value">730k</div>
+              </div>
+            </div>
+            <p>Yes. Our main KPIs abrevation was LOLOs :) It was a fun team!</p>
+            <p>User feedback praised the usefulness of the feature.</p>
+          </div>
+
+          <div className="work-item-case-study-blob">
+            <h5>Reflection 🤓</h5>
+            <p>Working on Local Offers taught me how to deliver
+              value in a legacy system at massive scale.  
+              I grew into a frontend-focused full-stack engineer 
+              with strong product sense and ownership mindset.
+            </p>
+          </div>
+          
 
         </div>
       </div>
