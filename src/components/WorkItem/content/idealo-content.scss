@@ -15,6 +15,9 @@
         }
     }
     .work-item-expanded-case-study-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
         .work-item-case-study-blob {
             h5 {
                 font-size: 18px;
