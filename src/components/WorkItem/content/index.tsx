@@ -1,9 +1,9 @@
 import { IdealoContent } from './IdealoContent';
+import { MilesContent } from './MilesContent';
 
 const contentComponents: Record<string, React.ComponentType> = {
   idealo: IdealoContent,
-  // miles: MilesContent,     // Add later
-  // freelance1: Freelance1Content,  // Add later
+  miles: MilesContent,
 };
 
 export const getWorkItemContent = (id: string) => {

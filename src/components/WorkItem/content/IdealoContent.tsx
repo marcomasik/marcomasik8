@@ -1,4 +1,4 @@
-import "./idealo-content.scss";
+import "./work-item-content.scss";
 
 export const IdealoContent = () => {
     return (
