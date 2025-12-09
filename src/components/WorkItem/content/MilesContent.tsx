@@ -19,7 +19,7 @@ export const MilesContent = () => {
                             <img src="/images/MILES_Image_Fleet_AudiA1-1.jpg" alt="Miles Mobility Car" />
                         </div>
                         </div>
-                    </div>  
+                    </div>
                     <div className="work-item-case-study-blob">
                         <h5>My role 👩‍💻</h5>
                         <div className="case-study-blob-row">
@@ -36,6 +36,9 @@ export const MilesContent = () => {
                             </p>
                         </div>
                     </div>
+                    <div className="case-study-blob-image-container">
+                            <img src="/images/miles-cars.png" alt="Miles Mobility Car" />
+                        </div>
                 </div>
             </div>
 
