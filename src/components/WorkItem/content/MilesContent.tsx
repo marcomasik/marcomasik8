@@ -74,6 +74,45 @@ export const MilesContent = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="work-item-case-study-blob">
+                        <h5>Impact 📈</h5>
+                        <div className="impact-grid">
+                            <div className="impact-row">
+                                <div className="kpi-item">
+                                    <div className="kpi-label">SEO (Lighthouse)</div>
+                                    <div className="kpi-result">100/100</div>
+                                </div>
+                            </div>
+                            
+                            <div className="impact-row">
+                                <div className="kpi-item">
+                                    <div className="kpi-label">Google Ranking</div>
+                                    <div className="kpi-result">Top result for "Miles Car Sharing"</div>
+                                </div>
+                            </div>
+                            
+                            <div className="impact-row">
+                                <div className="kpi-item">
+                                    <div className="kpi-label">Campaign Launch Speed</div>
+                                    <div className="kpi-result">&lt; 2 days average</div>
+                                </div>
+                            </div>
+                            
+                            <div className="impact-row">
+                                <div className="kpi-item">
+                                    <div className="kpi-label">Architecture</div>
+                                    <div className="kpi-result">Decoupled SSR + CMS</div>
+                                </div>
+                            </div>
+                            
+                            <div className="impact-row">
+                                <div className="kpi-item">
+                                    <div className="kpi-label">Team Efficiency</div>
+                                    <div className="kpi-result">Non-devs manage content easily</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
     );

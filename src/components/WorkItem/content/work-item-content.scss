@@ -19,6 +19,7 @@
         flex-direction: column;
         gap: 25px;
         .work-item-case-study-blob {
+            margin-bottom: 20px;
             h5 {
                 font-size: 18px;
                 margin-bottom: 15px;
@@ -78,6 +79,34 @@
                     }
                 }
             }
+            .impact-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                
+                .impact-row {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 2rem;
+                  padding: 0.75rem 0;
+                  border-bottom: 1px solid rgba(255,255,255,0.1);
+                  
+                  .kpi-item {
+                    display: contents; // Makes children act as grid items
+                  }
+                  
+                  .kpi-label {
+                    font-size: 1rem;
+                    opacity: 0.9;
+                  }
+                  
+                  .kpi-result {
+                    font-weight: bold;
+                    font-size: 1rem;
+                    text-align: right;
+                  }
+                }
+              }
 
         }
     }
