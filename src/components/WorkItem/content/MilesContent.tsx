@@ -20,6 +20,22 @@ export const MilesContent = () => {
                         </div>
                         </div>
                     </div>  
+                    <div className="work-item-case-study-blob">
+                        <h5>My role 👩‍💻</h5>
+                        <div className="case-study-blob-row">
+                            <p>I joined the marketing team as the only web developer, taking 
+                                ownership from planning to deployment. 
+                                While officially responsible for the website, 
+                                I also contributed to campaign ideas and marketing discussions.
+                            </p>
+                            <p>The environment was fast-paced, 
+                                startup-style, and full of ownership. 
+                                I had to plan my own milestones, communicate with 
+                                designers and stakeholders, and deliver a complete modern 
+                                website within a short timeframe.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
