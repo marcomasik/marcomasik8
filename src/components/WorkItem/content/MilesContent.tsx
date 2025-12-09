@@ -62,8 +62,19 @@ export const MilesContent = () => {
                             <p>This decoupled frontend + content architecture empowered both developers and marketers. The website became fast and flexible. </p>
                         </div>
                     </div>
+                    <div className="work-item-case-study-blob">
+                        <div className="case-study-blob-row">
+                            <div className="case-study-blob-image-container">
+                                <h5>Before</h5>
+                                <img src="/images/miles-mobile-before.png" alt="Miles Website Mobile View Before" />
+                            </div>
+                            <div className="case-study-blob-image-container">
+                                <h5>After</h5>
+                                <img src="/images/miles-mobile-after.png" alt="Miles Website Mobile View After" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
     );
 };  
