@@ -40,23 +40,26 @@ export const MilesContent = () => {
                         <img src="/images/miles-cars.png" alt="Miles Mobility Car" />
                     </div>
                     <div className="work-item-case-study-blob">
-                        <h5>My role 👩‍💻</h5>
+                        <h5>Solution 💡</h5>
                         <div className="case-study-blob-row">
                             <p>The old WordPress website limited design flexibility and animation capabilities. 
                                 I researched and proposed a modern decoupled setup with full creative freedom, 
                                 high performance, and easy content management.
                             </p>
-                            <ol>Key requirements:
+                            <ol><h6>Key requirements:</h6>
                                 <li>Develop freely with React components and animations.</li>
                                 <li>Create reusable templates for campaigns.</li>
                                 <li>Provide a code-free CMS for the marketing team.</li>
                                 <li>Achieve top Lighthouse and SEO performance.</li>
                             </ol>
-                            <ul>Chosen architecture:
+                            <ul><h6>Chosen architecture:</h6>
                                 <li>Framework: Gatsby.js (React + SSR)</li>
                                 <li>CMS: Contentful (Headless CMS + GraphQL API)</li>
                                 <li>Hosting: Vercel (CDN + instant deploys)</li>
                             </ul>
+                        </div>
+                        <div className="case-study-blob-row">
+                            <p>This decoupled frontend + content architecture empowered both developers and marketers. The website became fast and flexible. </p>
                         </div>
                     </div>
                 </div>
