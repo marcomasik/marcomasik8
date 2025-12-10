@@ -58,19 +58,45 @@ export const IdealoContent = () => {
           <div className="work-item-case-study-blob">
             <h5>Solution</h5>
             <div className="case-study-blob-row">
-              <div className="case-study-blob-image-container">
-                <img src="/images/localOffers.png" alt="Local Offers" />
+              <div className="case-study-blob-image-container--two-images">
+                <img src="/images/Local_Offers_Overview.png" alt="Local Offers on offer page" />
+                <p>Local Offers embedded in the offer page</p>
+                <img src="/images/Local_Offer_Sidebar.png" alt="Local Offers in the sidebar" />
+                <p>Local Offers in the sidebar</p>
+                <img src="/images/Local_Offers_map.png" alt="Local Offers map view" />
+                <p>Local Offers map view</p>
               </div>
-              <p>We worked iteratively with Kanban and A/B tests 
-              to protect Idealo’s core KPIs while improving UX.</p>
+              <div className="case-study-blob-row--paragraphs-under-each-other">
+                <p>We worked iteratively with Kanban, as it seemed the best way to manage the cross functional team. We conducted A/B tests 
+                  to protect Idealo’s core KPIs (that makes the money) while improving our feature. 
+                </p>
+                <p>Our feature was accessible through
+                  a new tab on the main price comparison page (offer page). Another way to access it was through the top widget in the sidebar,
+                  that displayed cheap local alternative products near the user's location. Once opened the users saw a map with the local shops 
+                  and their prices, and the same query displayed in a list view. The map was interactive, with buttons to adjust the radius of the search.
+                </p>
+                <p>
+                  The map was powered by React and Leaflet.js library, embedded in the page through JSPs. 
+                  The logic to fetch the database was written in Java Spring Boot. We started to work on migrating the frontend to Typescript and Astro.js.
+                  All of this was on the same repository as the offer page with the online and used offers. 
+                  We also had separated applications with their own repos to match IP addresses 
+                  with postcodes, to store local shops, and to update the local inventory. These applications were managed on AWS.
+                </p>
+                <p>
+                  To make sure not to break anything, every new feature had to be rolled out with unit tests and integration tests.
+                  We managed our internal CI/CD pipeline and eventually took over maintenance of the offer page's 
+                  pipeline since most of our features were deployed there.
+                </p>
+              </div>
             </div>
             <h6>Some of the highlights:</h6>
             <ul>
-                <li>Local Offers integrated into main offer page (New / Used / Local tabs) </li>
-                <li>Map view with adjustable radius (5–50 km) </li>
-                <li>IP, browser, and manual postcode detection  </li>
-                <li>Ordered by price for consistency  </li>
-                <li>Refactored code, removed jQuery, simplified CI/CD integration</li>
+                <li>Local Offers integrated into main offer page of Idealo </li>
+                <li>Map view built in React and Leaflet.js library </li>
+                <li>IP, browser, and manual postcode detection to find the user's location </li>
+                <li>Refactored code, removed jQuery, maintained CI/CD integration</li>
+                <li>Separated applications to match IP addresses with postcodes, to store local shops, and to update the local inventory</li>
+                <li>Managed on AWS</li>
               </ul>
           </div>
 
