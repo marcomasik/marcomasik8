@@ -40,7 +40,14 @@ export const IdealoContent = () => {
           <div className="work-item-case-study-blob">
             <h5>My Role 🧐</h5>
               
-              <p>Sole Frontend Engineer in a cross-functional team.</p>
+              <p>As explained above our cross functional team had 2-3 developers. 
+                  Usually the setup was one senior developer and two regular developers, one backend and one frontend.
+                  I was given full responsibility of the frontend development of the feature.
+                  We had no blueprint for how to manage our team, so we had to figure it out as we went along.
+                  As part of this freedom we also exchanged ideas and feedbacks about the areas where our other team members were working (data science, sales, UX). 
+                  Sometimes we did not have senior developer and/or backend developer on the team, so I was responsible for the entire development process. 
+                  I also helped to teach the junior developers the basics of coding.
+              </p>
               <ul>
                 <li>Developed prototypes, A/B tests, and production features  </li>
                 <li>Migrated frontend from JSP/jQuery to React & Astro.js  </li>
