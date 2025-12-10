@@ -18,16 +18,22 @@ export const IdealoContent = () => {
             <h5>Context 🧩</h5>
             <div className="case-study-blob-row">
               <p>
-                Idealo aimed to expand its price comparison platform by adding Local Offers: showing prices from nearby shops without reducing online conversions.
+                Idealo is the biggest price comparison platform in Germany. Their websites have nearly 100 million monthly visitors.
+                To expand their business and to provide a full coverage of available prices, the company experimented with a new feature, called Local Offers: 
+                showing prices of products from nearby shops to the users location.
               </p>
               <div className="case-study-blob-image-container">
                 <img src="/images/axel_springen_neubau.jpeg" alt="Idealo Building" />
               </div>
             </div>
+            <p>The team where I worked on Local Offers was a cross-functional team of 1 sale manager, 1 data scientist, 1 UX designer, 2-3 developers, 1 product owner and 1 project manager.</p>
+            <h6>Some of the challenges:</h6>
             <ul>
+              <li>Building a new feature in a legacy system</li>
               <li>Legacy stack: JSP, jQuery, Java Spring Boot</li>
+              <li>Maintaining the profitability of the existing platform</li>
               <li>Privacy-friendly location detection</li>
-              <li>Onboarding local vendors</li>
+              <li>Building up an inventory of local shops</li>
             </ul>
         
           </div>
