@@ -131,15 +131,16 @@ export const IdealoContent = () => {
               </div>
             </div>
             <p>Yes. Our main KPIs abrevation was LOLOs :) It was a fun team!</p>
-            <p>User feedback praised the usefulness of the feature.</p>
+            <p>We received many positive feedback over the years while conducting qualitative user tests with the users.</p>
           </div>
 
           <div className="work-item-case-study-blob">
             <h5>Reflection 🤓</h5>
             <p>Working on Local Offers taught me how to deliver
-              value in a legacy system at massive scale.  
-              I grew into a frontend-focused full-stack engineer 
-              with strong product sense and ownership mindset.
+              value in a legacy system at a massive scale.  
+              I grew into a frontend-focused full-stack engineer, as I had to take over responsibilities of the backend developers.
+              I also gained strong product sense and ownership mindset, because I proactively got involved in other areas of the product development.
+              Luckily we had a great team, that supported us and gave us the freedom to experiment and to fail and to learn from it.
             </p>
           </div>
           
