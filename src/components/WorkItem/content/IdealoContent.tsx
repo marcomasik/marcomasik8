@@ -5,9 +5,11 @@ export const IdealoContent = () => {
       <div className="work-item-expanded-content">
         <h4>Frontend Engineer // Idealo Internet GmbH, Berlin</h4>
         <ul className="work-item-expanded-content-header">
-          <li>Java</li>
-          <li>React</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
           <li>Astro.js</li>
+          <li>React</li>
+          <li>Java</li>
           <li>AWS</li>
           <li>AB Testing</li>
           <li>UX</li>
