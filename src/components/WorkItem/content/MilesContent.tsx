@@ -9,9 +9,9 @@ export const MilesContent = () => {
                         <h5>Context 🚗</h5>
                         <div className="case-study-blob-row">
                         <p>
-                            Miles Mobility is one of Germany’s largest independent car-sharing companies. 
+                            Miles Mobility is one of Germany’s largest independent carsharing companies. 
                             Notable for being one of the few not backed by a car manufacturer. Operating across many German cities, 
-                            its unique pay per distance model sets it apart from competitors.
+                            its unique pay per distance model sets it apart from the many competitors.
                             As the company scaled, the marketing team needed a new website that could handle dynamic campaigns, achieve top SEO scores, 
                             and reflect the bold, youthful identity of the brand.                    
                         </p>
@@ -28,8 +28,8 @@ export const MilesContent = () => {
                                 While officially responsible for the website, 
                                 I also contributed to campaign ideas and marketing discussions.
                             </p>
-                            <p>The environment was fast-paced, 
-                                startup-style, and full of ownership. 
+                            <p>The environment was fast paced, 
+                                startup style, and of course full of ownership. 
                                 I had to plan my own milestones, communicate with 
                                 designers and stakeholders, and deliver a complete modern 
                                 website within a short timeframe.
