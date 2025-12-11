@@ -102,7 +102,10 @@ export const IdealoContent = () => {
 
           <div className="work-item-case-study-blob">
             <h5>Impact 📈</h5>
-            <p>Feature evolved into a permanent, profitable Idealo product.</p>
+            <p>The feature evolved into a permanent, profitable product of Idealo. By seeing the local prices, 
+              the users have a broader sense of the market and are more motivated to commit to a purchase.
+              Even tho all local offers click generated revenue, it also helped to increase the overall revenue of the offer page.
+            </p>
 
             <h6>Number of lead-outs to local shops (aka 'LOcal Lead Outs'  aka LOLOs):</h6>
             <div className="case-study-impact-container">
