@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     position: relative;
     
     &--big {
@@ -57,6 +57,9 @@
     color: white;
     text-align: left;
     width: 100%;
+
+    opacity: 0;
+    animation: fadeInContent 0.3s ease 0.3s forwards;
     
     h4 {
         margin-bottom: 0.5rem;
@@ -80,5 +83,14 @@
         &:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+    }
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
