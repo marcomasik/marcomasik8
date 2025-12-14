@@ -5,6 +5,9 @@
         padding: 4em 6em 4em 6em;
 		display: flex;
 	    justify-content: center;
+        @media (max-width: 767px) {
+            padding: 0;
+        }
         #ocean-waves-video {
             position: absolute;
 			z-index: -1;
@@ -13,12 +16,21 @@
 			border-radius: 2em;
 			object-fit: cover;
             filter: brightness(0.9) contrast(1.1);
+            @media (max-width: 767px) {
+                width: 100vw; 
+                height: 100vh; 
+                border-radius: 0; 
+            }
         }
         .text-container {
             position: relative;
 			width: calc(100% - 12em);
 			height: calc(100vh - 8em);
 			max-width: 1200px;
+            @media (max-width: 767px) {
+                width: 100vw; // Full width
+                height: 100vh; // Full height
+            }
             .title {
                 width: 100%;
                 //font-size: clamp(2rem, 8vw, 8rem);
@@ -51,6 +63,11 @@
                 margin-bottom: 3em;
                 //font-size: 36px;
                 //font-weight: 400;
+                @media (max-width: 767px) {
+                    width: 100%; // Full width
+                    text-align: center; // Center the menu
+                    margin-left: 0; // Remove left margin
+                }
                 li {
                     list-style-type: none;
 					margin-bottom: 0.25em;
