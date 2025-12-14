@@ -11,11 +11,6 @@ export const StartSection = () => {
             <Textfit mode="single" min={16} max={120}>
               <h1 className="title">MARCO&nbsp;MASIK</h1>
             </Textfit>
-            <div className="subtitle-container">
-              <Textfit mode="single" min={8} max={120}>
-                <h2 className="subtitle">FULL STACK DEVELOPER</h2>
-              </Textfit>
-            </div>
             <ul className="start-page-menu">
               <Textfit mode="single" min={8} max={120}>
                 <li><a href="#works">WORKS</a></li>
