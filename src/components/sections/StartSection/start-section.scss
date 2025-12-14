@@ -64,9 +64,11 @@
                 //font-size: 36px;
                 //font-weight: 400;
                 @media (max-width: 767px) {
-                    width: 100%; // Full width
-                    text-align: center; // Center the menu
-                    margin-left: 0; // Remove left margin
+                    width: 80%;
+                    text-align: center; 
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
                 li {
                     list-style-type: none;
