@@ -40,10 +40,12 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="muskinn"
                   size="small" 
-                  color="#ed3424"
+                  color="#FFFFF0"
+                  image="/images/logos/muskinn_logo.png"
                   isExpanded={expandedItem === "muskinn"}
                   onClick={() => handleItemClick("muskinn")}
                 />
+                {/* muskinn red:    #ed3424*/}
                 <WorkItem 
                   id="freelance2"
                   size="small" 
