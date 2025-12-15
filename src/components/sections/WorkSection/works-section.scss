@@ -8,6 +8,11 @@
         height: calc(100% - 8em);
         padding: 4em 6em 4em 6em;
         position: relative;
+        @media (max-width: 767px) {
+          width: 100%;    
+          height: auto;
+          padding: 2em 1.5em;
+        }
         .works-container-content {
           h2 {
             padding: .5em 0 .5em 0;
@@ -18,6 +23,11 @@
             gap: 1em;
             position: relative;
             margin-bottom: 2em;
+            @media (max-width: 767px) {
+              flex-direction: column;
+              align-items: center;
+              gap: 1.5em;
+            }
           }
         }
       }
