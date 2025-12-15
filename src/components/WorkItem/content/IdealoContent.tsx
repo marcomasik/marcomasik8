@@ -18,7 +18,7 @@ export const IdealoContent = () => {
 
           <div className="work-item-case-study-blob">
             <h5>Context 🧩</h5>
-            <div className="case-study-blob-row">
+            <div id="idealo-context" className="case-study-blob-row">
               <p>
                 Idealo is the biggest price comparison platform in Germany. Their websites have nearly 100 million monthly visitors.
                 To expand their business and to provide a full coverage of available prices, the company experimented with a new feature, called Local Offers: 
@@ -60,7 +60,7 @@ export const IdealoContent = () => {
           <div className="work-item-case-study-blob">
             <h5>Solution</h5>
             <div className="case-study-blob-row">
-              <div className="case-study-blob-image-container--two-images">
+              <div className="case-study-blob-image-container--many-images">
                 <img src="/images/Local_Offers_Overview.png" alt="Local Offers on offer page" />
                 <p>Local Offers embedded in the offer page</p>
                 <img src="/images/Local_Offer_Sidebar.png" alt="Local Offers in the sidebar" />

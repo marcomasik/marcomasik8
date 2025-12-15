@@ -24,6 +24,11 @@
                 font-size: 18px;
                 margin-bottom: 15px;
             }
+            #idealo-context {
+                @media (max-width: 767px) {
+                    flex-direction: column-reverse;
+                }
+            }
             .case-study-blob-image-container {  
                 width: 350px;
                 height: auto;
@@ -39,6 +44,9 @@
                 flex-direction: row;
                 gap: 15px;
                 margin-bottom: 15px;
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
                 p {
                     font-size: 16px;
                     width: fit-content;
@@ -51,12 +59,18 @@
                 .case-study-blob-image-container {
                     width: 350px;
                     height: auto;
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
 
-                    &--two-images {
+                    &--many-images {
                         width: 50%;
                         display: flex;
                         flex-direction: column;
                         gap: 15px;
+                        @media (max-width: 767px) {
+                            width: 100%;
+                        }
                         img {
                             width: 100%;
                             height: auto;
