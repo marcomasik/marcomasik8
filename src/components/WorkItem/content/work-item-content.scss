@@ -30,6 +30,34 @@
         gap: 25px;
         .work-item-case-study-blob {
             margin-bottom: 20px;
+            &--with-video {
+                display: flex;
+                gap: 2rem;
+                align-items: flex-start;
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+            .work-item-case-study-text {
+                flex: 1;
+                min-width: 0;
+            }
+            .work-item-case-study-video {
+                flex: 1;
+                max-width: 50%;
+                .work-item-video {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 2em;
+                    object-fit: cover;
+                }                
+            }
+            @media (max-width: 767px) {
+                .work-item-case-study-video {
+                    max-width: 100%;
+                }
+            }
             h5 {
                 font-size: 18px;
                 margin-bottom: 15px;
