@@ -22,6 +22,7 @@ export const WorksSection = () => {
                   id="idealo"
                   size="big" 
                   backgroundColor="#0a3761" 
+                  fontColor="#ffffff"
                   image="/images/logos/idealo.png"
                   isExpanded={expandedItem === "idealo"}
                   onClick={() => handleItemClick("idealo")}
@@ -29,7 +30,8 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="miles"
                   size="big" 
-                  backgroundColor="#000000" 
+                  backgroundColor="#000000"
+                  fontColor="#ffffff"
                   image="/images/logos/miles.png"
                   isExpanded={expandedItem === "miles"}
                   onClick={() => handleItemClick("miles")}
@@ -41,6 +43,7 @@ export const WorksSection = () => {
                   id="muskinn"
                   size="small" 
                   backgroundColor="#FFFFF0"
+                  fontColor="#ed3424"
                   image="/images/logos/muskinn_logo.png"
                   isExpanded={expandedItem === "muskinn"}
                   onClick={() => handleItemClick("muskinn")}

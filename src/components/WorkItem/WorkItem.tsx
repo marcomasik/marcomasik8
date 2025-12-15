@@ -6,16 +6,21 @@ interface WorkItemProps {
   id: string;
   size: 'big' | 'small';
   backgroundColor: string;
+  fontColor?: string;
   image?: string;
   isExpanded: boolean;
   onClick: () => void;
 }
 
-export const WorkItem = ({ id, size, backgroundColor, image, isExpanded, onClick }: WorkItemProps) => {
+export const WorkItem = ({ id, size, backgroundColor, fontColor = '#000000', image, isExpanded, onClick }: WorkItemProps) => {
   return (
     <div 
       className={`work-item work-item--${size} ${isExpanded ? 'work-item--expanded' : ''}`}
-      style={{ backgroundColor }}
+      style={{ 
+        backgroundColor, 
+        color: fontColor,
+        '--work-item-font-color': fontColor 
+      } as React.CSSProperties & { '--work-item-font-color': string }}
       onClick={onClick}
     >
       <div className="work-item-content">
