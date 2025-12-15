@@ -10,6 +10,9 @@
     &--big {
         width: 350px;
         height: 216px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
     
     &--small {
@@ -21,6 +24,9 @@
         width: 60%;
         height: auto;
         z-index: 10;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
     
     &:hover:not(.work-item--expanded) {
@@ -48,6 +54,9 @@
         max-width: 200px;
         max-height: 100px;
         margin-bottom: 1rem;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 }
 
