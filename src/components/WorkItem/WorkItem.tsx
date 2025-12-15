@@ -5,17 +5,17 @@ import { getWorkItemContent } from './content';
 interface WorkItemProps {
   id: string;
   size: 'big' | 'small';
-  color: string;
+  backgroundColor: string;
   image?: string;
   isExpanded: boolean;
   onClick: () => void;
 }
 
-export const WorkItem = ({ id, size, color, image, isExpanded, onClick }: WorkItemProps) => {
+export const WorkItem = ({ id, size, backgroundColor, image, isExpanded, onClick }: WorkItemProps) => {
   return (
     <div 
       className={`work-item work-item--${size} ${isExpanded ? 'work-item--expanded' : ''}`}
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor }}
       onClick={onClick}
     >
       <div className="work-item-content">

@@ -21,7 +21,7 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="idealo"
                   size="big" 
-                  color="#0a3761" 
+                  backgroundColor="#0a3761" 
                   image="/images/logos/idealo.png"
                   isExpanded={expandedItem === "idealo"}
                   onClick={() => handleItemClick("idealo")}
@@ -29,7 +29,7 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="miles"
                   size="big" 
-                  color="#000000" 
+                  backgroundColor="#000000" 
                   image="/images/logos/miles.png"
                   isExpanded={expandedItem === "miles"}
                   onClick={() => handleItemClick("miles")}
@@ -40,7 +40,7 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="muskinn"
                   size="small" 
-                  color="#FFFFF0"
+                  backgroundColor="#FFFFF0"
                   image="/images/logos/muskinn_logo.png"
                   isExpanded={expandedItem === "muskinn"}
                   onClick={() => handleItemClick("muskinn")}
@@ -49,21 +49,21 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="freelance2"
                   size="small" 
-                  color="lightblue"
+                  backgroundColor="lightblue"
                   isExpanded={expandedItem === "freelance2"}
                   onClick={() => handleItemClick("freelance2")}
                 />
                 <WorkItem 
                   id="freelance3"
                   size="small" 
-                  color="lightblue"
+                  backgroundColor="lightblue"
                   isExpanded={expandedItem === "freelance3"}
                   onClick={() => handleItemClick("freelance3")}
                 />
                 <WorkItem 
                   id="freelance4"
                   size="small" 
-                  color="lightblue"
+                  backgroundColor="lightblue"
                   isExpanded={expandedItem === "freelance4"}
                   onClick={() => handleItemClick("freelance4")}
                 />
