@@ -38,11 +38,11 @@ export const WorksSection = () => {
               <h2>Freelance website projects</h2>
               <div className="work-items-container">
                 <WorkItem 
-                  id="freelance1"
+                  id="muskinn"
                   size="small" 
-                  color="lightblue"
-                  isExpanded={expandedItem === "freelance1"}
-                  onClick={() => handleItemClick("freelance1")}
+                  color="#ed3424"
+                  isExpanded={expandedItem === "muskinn"}
+                  onClick={() => handleItemClick("muskinn")}
                 />
                 <WorkItem 
                   id="freelance2"
