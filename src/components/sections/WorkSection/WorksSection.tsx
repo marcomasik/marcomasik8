@@ -50,11 +50,12 @@ export const WorksSection = () => {
                 />
                 {/* muskinn red:    #ed3424*/}
                 <WorkItem 
-                  id="freelance2"
+                  id="borneo"
                   size="small" 
-                  backgroundColor="lightblue"
-                  isExpanded={expandedItem === "freelance2"}
-                  onClick={() => handleItemClick("freelance2")}
+                  backgroundColor="#EDE8D0"
+                  fontColor="#000000"
+                  isExpanded={expandedItem === "borneo"}
+                  onClick={() => handleItemClick("borneo")}
                 />
                 <WorkItem 
                   id="swarm"
