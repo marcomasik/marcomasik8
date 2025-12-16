@@ -32,9 +32,9 @@ export const BorneoContent = () => {
                     </div>
                 </div>
 
-                <div className="work-item-case-study-blob">
+                <div className="work-item-case-study-blob work-item-case-study-blob--with-video">
                     <h5>Solution 💡</h5>
-                    <div className="case-study-blob-row">
+                    <div className="work-item-case-study-text">
                         <ul>
                             <li>Complete website and webshop development</li>
                             <li>SEO optimization for better visibility</li>
@@ -43,6 +43,16 @@ export const BorneoContent = () => {
                             <li>WordPress to Squarespace migration</li>
                             <li>Indonesian folk art-inspired design elements</li>
                         </ul>
+                    </div>
+                    <div className="work-item-case-study-video">
+                        <video 
+                            src="/videos/borneo2.mp4" 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline
+                            className="work-item-video"
+                        />
                     </div>
                 </div>
 
