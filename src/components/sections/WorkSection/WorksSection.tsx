@@ -68,8 +68,9 @@ export const WorksSection = () => {
                 <WorkItem 
                   id="kmonitor"
                   size="small" 
-                  backgroundColor="#1E3A8A"
-                  fontColor="#ffffff"
+                  backgroundColor="#EAECF5"
+                  fontColor="#000000"
+                  image="/images/logos/k-monitor.jpg"
                   isExpanded={expandedItem === "kmonitor"}
                   onClick={() => handleItemClick("kmonitor")}
                 />
