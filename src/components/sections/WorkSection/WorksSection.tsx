@@ -57,11 +57,13 @@ export const WorksSection = () => {
                   onClick={() => handleItemClick("freelance2")}
                 />
                 <WorkItem 
-                  id="freelance3"
+                  id="swarm"
                   size="small" 
-                  backgroundColor="lightblue"
-                  isExpanded={expandedItem === "freelance3"}
-                  onClick={() => handleItemClick("freelance3")}
+                  backgroundColor="#000000"
+                  fontColor="#ffffff"
+                  image="/images/logos/swarm.png"
+                  isExpanded={expandedItem === "swarm"}
+                  onClick={() => handleItemClick("swarm")}
                 />
                 <WorkItem 
                   id="freelance4"
