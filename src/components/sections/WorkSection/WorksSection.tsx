@@ -66,11 +66,12 @@ export const WorksSection = () => {
                   onClick={() => handleItemClick("swarm")}
                 />
                 <WorkItem 
-                  id="freelance4"
+                  id="kmonitor"
                   size="small" 
-                  backgroundColor="lightblue"
-                  isExpanded={expandedItem === "freelance4"}
-                  onClick={() => handleItemClick("freelance4")}
+                  backgroundColor="#1E3A8A"
+                  fontColor="#ffffff"
+                  isExpanded={expandedItem === "kmonitor"}
+                  onClick={() => handleItemClick("kmonitor")}
                 />
               </div>
             </div>
