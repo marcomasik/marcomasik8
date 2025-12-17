@@ -54,6 +54,7 @@ export const WorksSection = () => {
                   size="small" 
                   backgroundColor="#EDE8D0"
                   fontColor="#000000"
+                  image="/images/logos/borneo_logo.png"
                   isExpanded={expandedItem === "borneo"}
                   onClick={() => handleItemClick("borneo")}
                 />
