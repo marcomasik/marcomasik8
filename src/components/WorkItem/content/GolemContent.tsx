@@ -12,18 +12,18 @@ export const GolemContent = () => {
                 <div className="work-item-case-study-blob">
                     <h3>Project Overview</h3>
                     <p>
-                        Golem is a leading German IT newspaper. I was tasked with creating 
-                        prototypes to explore new article layouts and improve the reading 
-                        experience for their online platform.
+                        Golem is a leading German IT newspaper. I was tasked with coding 
+                        HTML and CSS prototypes based on provided designs to test how 
+                        articles could be presented on their online platform.
                     </p>
                 </div>
 
                 <div className="work-item-case-study-blob">
                     <h3>My Role & Responsibilities</h3>
                     <ul>
-                        <li>Developed HTML and CSS prototypes for article layouts</li>
-                        <li>Created draft designs for improved article presentation</li>
-                        <li>Focused on readability and user experience optimization</li>
+                        <li>Coded HTML and CSS prototypes from provided designs</li>
+                        <li>Implemented draft layouts for article presentation</li>
+                        <li>Focused on technical implementation of design concepts</li>
                     </ul>
                 </div>
 
@@ -40,9 +40,9 @@ export const GolemContent = () => {
                 <div className="work-item-case-study-blob">
                     <h3>Results</h3>
                     <p>
-                        Successfully delivered multiple prototype layouts that demonstrated 
-                        improved article presentation and enhanced readability for the 
-                        German IT news platform.
+                        Successfully delivered functional HTML/CSS prototypes that helped 
+                        test different article layout concepts. Some elements from these 
+                        prototypes gradually found their way into the newspaper's layout.
                     </p>
                 </div>
             </div>
