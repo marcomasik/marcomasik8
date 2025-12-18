@@ -85,6 +85,15 @@ export const WorksSection = () => {
                   isExpanded={expandedItem === "muhely"}
                   onClick={() => handleItemClick("muhely")}
                 />
+                <WorkItem 
+                  id="golem"
+                  size="small" 
+                  backgroundColor="#FF6600"
+                  fontColor="#ffffff"
+                  image="/images/logos/golem.png"
+                  isExpanded={expandedItem === "golem"}
+                  onClick={() => handleItemClick("golem")}
+                />
               </div>
             </div>
           </div>

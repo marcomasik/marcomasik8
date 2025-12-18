@@ -5,6 +5,7 @@ import { SwarmContent } from './SwarmContent';
 import { KMonitorContent } from './KMonitorContent';
 import { BorneoContent } from './BorneoContent';
 import { MuhelyContent } from './MuhelyContent';
+import { GolemContent } from './GolemContent';
 
 const contentComponents: Record<string, React.ComponentType> = {
   idealo: IdealoContent,
@@ -14,6 +15,7 @@ const contentComponents: Record<string, React.ComponentType> = {
   kmonitor: KMonitorContent,
   borneo: BorneoContent,
   muhely: MuhelyContent,
+  golem: GolemContent,
 };
 
 export const getWorkItemContent = (id: string) => {
