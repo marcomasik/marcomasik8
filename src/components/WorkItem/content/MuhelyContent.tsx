@@ -54,15 +54,24 @@ export const MuhelyContent = () => {
                     </ul>
                 </div>
 
-                <div className="work-item-case-study-blob">
-                    <h3>Results</h3>
-                    <p>
-                        Successfully delivered a modern website that replaced the outdated platform 
-                        with improved performance and user experience. The integrated booking system 
-                        streamlined the class registration process, making it easier for students 
-                        to book contemporary dance classes while automatically managing the 
-                        foundation's schedule through Google Calendar integration.
-                    </p>
+                <div className="work-item-case-study-blob work-item-case-study-blob--with-video">
+                    <div className="work-item-case-study-text">
+                        <h3>Results</h3>
+                        <p>
+                            Successfully delivered a modern website that replaced the outdated platform 
+                            with improved performance and user experience. The integrated booking system 
+                            streamlined the class registration process, making it easier for students 
+                            to book contemporary dance classes while automatically managing the 
+                            foundation's schedule through Google Calendar integration.
+                        </p>
+                    </div>
+                    <div className="work-item-case-study-video">
+                        <img 
+                            src="/images/muhely_screenshot.png" 
+                            alt="Mühely Foundation website screenshot"
+                            className="work-item-video"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
