@@ -14,7 +14,9 @@ export const GolemContent = () => {
                     <p>
                         Golem is a leading German IT newspaper. I was tasked with coding 
                         HTML and CSS prototypes based on provided designs to test how 
-                        articles could be presented on their online platform.
+                        articles could be presented on their online platform. The new 
+                        design was specifically structured to accommodate extensive 
+                        advertisement placement while maintaining readability.
                     </p>
                 </div>
 
