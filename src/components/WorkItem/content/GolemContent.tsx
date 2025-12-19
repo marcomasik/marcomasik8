@@ -20,23 +20,30 @@ export const GolemContent = () => {
                     </p>
                 </div>
 
-                <div className="work-item-case-study-blob">
-                    <h3>My Role & Responsibilities</h3>
-                    <ul>
-                        <li>Coded HTML and CSS prototypes from provided designs</li>
-                        <li>Implemented draft layouts for article presentation</li>
-                        <li>Focused on technical implementation of design concepts</li>
-                    </ul>
-                </div>
+                <div className="work-item-case-study-blob work-item-case-study-blob--with-video">
+                    <div className="work-item-case-study-text">
+                        <h3>My Role & Responsibilities</h3>
+                        <ul>
+                            <li>Coded HTML and CSS prototypes from provided designs</li>
+                            <li>Implemented draft layouts for article presentation</li>
+                            <li>Focused on technical implementation of design concepts</li>
+                        </ul>
 
-                <div className="work-item-case-study-blob">
-                    <h3>Technologies Used</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Responsive Design</li>
-                        <li>Prototype Development</li>
-                    </ul>
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Responsive Design</li>
+                            <li>Prototype Development</li>
+                        </ul>
+                    </div>
+                    <div className="work-item-case-study-video">
+                        <img 
+                            src="/images/golem_screenshot.png" 
+                            alt="Golem.de Layout Prototype Screenshot" 
+                            className="work-item-video"
+                        />
+                    </div>
                 </div>
 
                 <div className="work-item-case-study-blob">
