@@ -39,16 +39,15 @@ export const WorksSection = () => {
               </div>
               <h2>Freelance website projects</h2>
               <div className="work-items-container">
-                <WorkItem 
-                  id="muskinn"
+              <WorkItem 
+                  id="muhely"
                   size="small" 
-                  backgroundColor="#FFFFF0"
-                  fontColor="#000000"
-                  image="/images/logos/muskinn_logo.png"
-                  isExpanded={expandedItem === "muskinn"}
-                  onClick={() => handleItemClick("muskinn")}
+                  backgroundColor="#2D1B69"
+                  fontColor="#ffffff"
+                  image="/images/logos/muhely_logo.png"
+                  isExpanded={expandedItem === "muhely"}
+                  onClick={() => handleItemClick("muhely")}
                 />
-                {/* muskinn red:    #ed3424*/}
                 <WorkItem 
                   id="borneo"
                   size="small" 
@@ -58,6 +57,7 @@ export const WorksSection = () => {
                   isExpanded={expandedItem === "borneo"}
                   onClick={() => handleItemClick("borneo")}
                 />
+                {/* muskinn red:    #ed3424*/}
                 <WorkItem 
                   id="swarm"
                   size="small" 
@@ -68,6 +68,15 @@ export const WorksSection = () => {
                   onClick={() => handleItemClick("swarm")}
                 />
                 <WorkItem 
+                  id="muskinn"
+                  size="small" 
+                  backgroundColor="#FFFFF0"
+                  fontColor="#000000"
+                  image="/images/logos/muskinn_logo.png"
+                  isExpanded={expandedItem === "muskinn"}
+                  onClick={() => handleItemClick("muskinn")}
+                />
+                <WorkItem 
                   id="kmonitor"
                   size="small" 
                   backgroundColor="#EAECF5"
@@ -76,15 +85,7 @@ export const WorksSection = () => {
                   isExpanded={expandedItem === "kmonitor"}
                   onClick={() => handleItemClick("kmonitor")}
                 />
-                <WorkItem 
-                  id="muhely"
-                  size="small" 
-                  backgroundColor="#2D1B69"
-                  fontColor="#ffffff"
-                  image="/images/logos/muhely_logo.png"
-                  isExpanded={expandedItem === "muhely"}
-                  onClick={() => handleItemClick("muhely")}
-                />
+
                 <WorkItem 
                   id="golem"
                   size="small" 
