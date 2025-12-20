@@ -17,7 +17,7 @@ export const WorksSection = () => {
           <div className="works-container-inner">
             <div className="works-container-content">
               <h2>Full time jobs</h2>
-              <div className="work-items-container">
+              <div className="work-items-container" id="full-time-jobs">
                 <WorkItem 
                   id="idealo"
                   size="big" 
@@ -38,7 +38,7 @@ export const WorksSection = () => {
                 />
               </div>
               <h2>Freelance website projects</h2>
-              <div className="work-items-container">
+              <div className="work-items-container" id="freelance-projects">
               <WorkItem 
                   id="muhely"
                   size="small" 

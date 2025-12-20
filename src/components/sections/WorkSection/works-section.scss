@@ -23,6 +23,9 @@
             gap: 1em;
             position: relative;
             margin-bottom: 2em;
+            &#freelance-projects {
+              max-width: 600px
+            }
             @media (max-width: 767px) {
               flex-direction: column;
               align-items: center;
