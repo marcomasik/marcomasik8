@@ -5,5 +5,22 @@
     .cv-container-inner {
         width: calc(100% - 12em);
         padding: 4em 6em;
+        h2{
+            margin-bottom: 2em;
+        }
+        .cv-work-experience {
+            margin-bottom: 2em;
+            h3{
+                margin-bottom: .5em;
+            }
+            h4{
+                margin-bottom: .5em;
+            }
+            ul {
+                li {
+                    margin-left: 1em;
+                }
+            }
+        }
     }
 }
