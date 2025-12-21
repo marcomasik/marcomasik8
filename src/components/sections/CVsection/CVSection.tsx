@@ -11,14 +11,23 @@ export const CVSection = () => {
             <h4>2021 April - 2025 July</h4>
             <ul>
               <li>
-                Developed and enhanced the Local Offers
+                Developed and enhanced the "local offers"
                 feature, integrating it into idealo’s core
                 price comparison application
               </li>
               <li>
-                Created a map-based interface with
+                Created a map based interface with
                 location detection to display offers around
                 the users’ location
+              </li>
+              <li>
+                Managed CI/CD pipelines and AWS infrastructure for 
+                multiple applications supporting local offers systems
+              </li>
+              <li>
+                Mentored junior developers and 
+                collaborated cross functionally with UX, data science, 
+                and sales teams to deliver product requirements
               </li>
             </ul> 
           </div>
@@ -27,15 +36,17 @@ export const CVSection = () => {
             <h4>2020 July - 2020 December</h4>
             <ul>
               <li>
-              Planning, development, and
-              deployment of a new website for Miles Mobility,
-              a prominent car-sharing company in Germany
+                Planning, development, and
+                deployment of a new website for Miles Mobility,
+                a prominent carsharing company in Germany
               </li>
+              <li>Analysing and comparing technologies for future website development</li>
               <li>
                 Built a headless CMS using Contentful and
                 Gatsby.js, enabling dynamic features and
                 faster marketing content updates
               </li>
+              <li>Partcipate in marketing meetings and provide technical insights</li>
             </ul> 
           </div>
           <div className="cv-work-experience">
