@@ -53,6 +53,20 @@ export const CVSection = () => {
               </li>
             </ul>
           </div>
+          <div className="cv-work-experience">
+            <h3>Freelance web developer</h3>
+            <h4>2014 October - 2020 June</h4>
+            <ul>
+              <li>
+                Developed and maintained websites for clients
+                using WordPress, HTML, CSS, and JavaScript  
+              </li>
+              <li>
+                Implemented responsive design and SEO best practices
+                to improve website performance and user experience
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
