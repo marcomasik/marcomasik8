@@ -1,0 +1,9 @@
+.cv-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    .cv-container-inner {
+        width: calc(100% - 12em);
+        padding: 4em 6em;
+    }
+}
