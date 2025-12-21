@@ -84,11 +84,94 @@ export const CVSection = () => {
             <div className="cv-work-tech-stack-container">
               <h3>Tech Stack</h3>
               <ul>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/react_logo.png" alt="React logo" />
+                  </div>
+                  React
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/next_logo.png" alt="Next.js logo" />
+                  </div>
+                  Next.js
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/node_logo.png" alt="Node.js logo" />
+                  </div>
+                  Node.js
+                </li>
+                <li>
+                  JavaScript
+                </li>
+                <li>TypeScript</li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/something.png" alt="Something logo" />
+                  </div>
+                  Something
+                </li>
               </ul>
             </div>
           </div>

@@ -14,7 +14,13 @@
             .cv-work-tech-stack-container {
                 ul{
                     li{
-                        margin-left: 1em;
+                        display: flex;
+                        .cv-work-tech-stack-icon{
+                            img{
+                                width: 20px;
+                                height: auto;
+                            }
+                        }
                     }
                 }
             }
