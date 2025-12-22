@@ -84,6 +84,7 @@ export const CVSection = () => {
             <div className="cv-work-tech-stack-container">
               <h3>Tech Stack</h3>
               <ul>
+                {/* Js world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
                     <img src="/images/logos/react_logo.png" alt="React logo" />
@@ -128,22 +129,48 @@ export const CVSection = () => {
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/leaflet_logo.png" alt="Leaflet.js logo" />
                   </div>
-                  Something
+                  Leaflet.js
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/jquery_logo.png" alt="jQuery logo" />
                   </div>
-                  Something
+                  jQuery
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/vite_logo.png" alt="Vite logo" />
                   </div>
-                  Something
+                  Vite
                 </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/express_logo.png" alt="Express.js logo" />
+                  </div>
+                  Express.js
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/graphQL_logo.png" alt="GraphQL logo" />
+                  </div>
+                  GraphQL
+                </li>
+                {/* CSS world */}
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/sass_logo.png" alt="SASS logo" />
+                  </div>
+                  SASS/SCSS
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/tailwind_logo.png" alt="Tailwind logo" />
+                  </div>
+                  Tailwind CSS
+                </li>
+                {/* PHP Wordpress world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
                     <img src="/images/logos/something.png" alt="Something logo" />
