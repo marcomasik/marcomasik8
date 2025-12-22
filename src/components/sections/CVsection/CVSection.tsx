@@ -173,15 +173,39 @@ export const CVSection = () => {
                 {/* PHP Wordpress world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/php_logo.png" alt="PHP logo" />
                   </div>
-                  Something
+                  PHP
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/wordpress_logo.png" alt="Wordpress logo" />
                   </div>
-                  Something
+                  Wordpress
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/mysql_logo.png" alt="MySQL logo" />
+                  </div>
+                  MySQL
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/laravel_logo.png" alt="Laravel logo" />
+                  </div>
+                  Laravel
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/woocommerce_logo.png" alt="Woo Commerce logo" />
+                  </div>
+                  Woo Commerce
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/shopify_logo.png" alt="Shopify logo" />
+                  </div>
+                  Shopify
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
