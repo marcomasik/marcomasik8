@@ -103,26 +103,28 @@ export const CVSection = () => {
                   Node.js
                 </li>
                 <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/javascript_logo.png" alt="JavaScript logo" />
+                  </div>
                   JavaScript
                 </li>
-                <li>TypeScript</li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/typescript_logo.png" alt="TypeScript logo" />
                   </div>
-                  Something
+                  TypeScript  
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/astro_logo.png" alt="Astro.js logo" />
                   </div>
-                  Something
+                  Astro.js
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/gatsby_logo.png" alt="Gatsby.js logo" />
                   </div>
-                  Something
+                  Gatsby.js
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
