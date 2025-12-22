@@ -7,6 +7,7 @@ export const ContactSection = () => {
         <div className="contact-container-inner">
         <h2>Contact</h2>
           <div className="contact-container-content">
+          <img src="/images/contact.jpeg" alt="Contact" />
             <div className="contact-container-inner-left">
               <p>Get in touch with me here:</p>
               <p>hello@marcomasik.com</p>
@@ -26,7 +27,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="contact-container-inner-right">
-              <img src="/images/contact-image.png" alt="Contact" />
+              
             </div>
           </div>
         </div>
