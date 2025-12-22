@@ -147,6 +147,12 @@ export const CVSection = () => {
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/webpack_logo.png" alt="Webpack logo" />
+                  </div>
+                  Webpack
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
                     <img src="/images/logos/express_logo.png" alt="Express.js logo" />
                   </div>
                   Express.js
@@ -207,23 +213,97 @@ export const CVSection = () => {
                   </div>
                   Shopify
                 </li>
+                {/* Backend world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/java-spring-boot_logo.png" alt="Java Spring Boot logo" />
                   </div>
-                  Something
+                  Java Spring Boot
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/maven_logo.png" alt="Maven logo" />
                   </div>
-                  Something
+                  Maven
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/something.png" alt="Something logo" />
+                    <img src="/images/logos/aws_logo.png" alt="AWS logo" />
                   </div>
-                  Something
+                  AWS
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/mongodb_logo.png" alt="MongoDB logo" />
+                  </div>
+                  MongoDB
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/docker_logo.png" alt="Docker logo" />
+                  </div>
+                  Docker
+                </li>
+                {/* Tools world */}
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/cursor_logo.png" alt="Cursor logo" />
+                  </div>
+                  Cursor
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/chatgpt_logo.png" alt="ChatGPT logo" />
+                  </div>
+                  ChatGPT
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/claude_logo.png" alt="Claude logo" />
+                  </div>
+                  Claude
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/perplexity_logo.png" alt="Perplexity logo" />
+                  </div>
+                  Perplexity
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/GitHub_logo.png" alt="GitHub logo" />
+                  </div>
+                  GitHub
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/figma_logo.png" alt="Figma logo" />
+                  </div>
+                  Figma
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/jira_logo.png" alt="JIRA logo" />
+                  </div>
+                  JIRA
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/teams_logo.png" alt="Teams logo" />
+                  </div>
+                  Teams
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/intellij_logo.png" alt="IntelliJ logo" />
+                  </div>
+                  IntelliJ
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/vscode_logo.png" alt="VSCode logo" />
+                  </div>
+                  VSCode
                 </li>
               </ul>
             </div>
