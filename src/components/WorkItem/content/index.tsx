@@ -6,6 +6,7 @@ import { KMonitorContent } from './KMonitorContent';
 import { BorneoContent } from './BorneoContent';
 import { MuhelyContent } from './MuhelyContent';
 import { GolemContent } from './GolemContent';
+import { MomentumContent } from './MomentumContent';
 
 const contentComponents: Record<string, React.ComponentType> = {
   idealo: IdealoContent,
@@ -16,6 +17,7 @@ const contentComponents: Record<string, React.ComponentType> = {
   borneo: BorneoContent,
   muhely: MuhelyContent,
   golem: GolemContent,
+  momentum: MomentumContent,
 };
 
 export const getWorkItemContent = (id: string) => {
