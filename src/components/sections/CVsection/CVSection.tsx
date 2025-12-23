@@ -80,6 +80,16 @@ export const CVSection = () => {
                   </li>
                 </ul>
               </div>
+              <h2>Education</h2>
+              <div className="cv-work-experience">
+                <h3>Beuth Hochschule für Technik Berlin</h3>
+                <h4>2011 - 2017 Medieninformatik Bachelor of Science</h4>
+                <ul>
+                  <li>
+                    Studied Media Informatics at the Beuth Hochschule für Technik Berlin
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="cv-work-tech-stack-container">
               <h3>Tech Stack</h3>
