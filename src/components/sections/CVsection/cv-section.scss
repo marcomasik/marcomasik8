@@ -28,9 +28,6 @@
                 gap: 2em;
             }
             .cv-work-tech-stack-container {
-                @media (max-width: 767px) {
-                    order: -1;
-                }
                 h3 {
                     @media (max-width: 767px) {
                         font-size: 1.2rem;
