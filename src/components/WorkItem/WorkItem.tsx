@@ -22,6 +22,7 @@ export const WorkItem = ({ id, size, backgroundColor, fontColor = '#000000', ima
         '--work-item-font-color': fontColor 
       } as React.CSSProperties & { '--work-item-font-color': string }}
       onClick={onClick}
+      data-work-item-id={id}
     >
       <div className="work-item-content">
         {image && (

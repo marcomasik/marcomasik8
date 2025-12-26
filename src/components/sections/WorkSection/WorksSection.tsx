@@ -2,13 +2,54 @@
 
 import "./works-section.scss";
 import { WorkItem } from "@/components/WorkItem/WorkItem";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const WorksSection = () => {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
+  const packeryInstance = useRef<any>(null);
+
+  useEffect(() => {
+    // Dynamically import Packery only on client side
+    const initPackery = async () => {
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        const Packery = (await import('packery')).default;
+        const freelanceContainer = document.getElementById('freelance-projects');
+        if (freelanceContainer) {
+          packeryInstance.current = new Packery(freelanceContainer, {
+            itemSelector: '.work-item',
+            gutter: 16,
+            transitionDuration: 0 // Disable Packery transitions, use CSS instead
+          });
+        }
+      }
+    };
+
+    initPackery();
+
+    // Cleanup on unmount
+    return () => {
+      if (packeryInstance.current) {
+        packeryInstance.current.destroy();
+      }
+    };
+  }, []);
 
   const handleItemClick = (itemId: string) => {
     setExpandedItem(expandedItem === itemId ? null : itemId);
+
+    // Trigger layout immediately after state change
+    setTimeout(() => {
+      if (packeryInstance.current) {
+        packeryInstance.current.layout();
+      }
+    }, 0);
+
+    // And again after transition completes
+    setTimeout(() => {
+      if (packeryInstance.current) {
+        packeryInstance.current.layout();
+      }
+    }, 350);
   };
 
   return (
