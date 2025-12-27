@@ -13,6 +13,9 @@
         @media (max-width: 767px) {
             width: 100%;
         }
+        &.work-item--expanded {
+            width: 60%;
+        }
     }
     
     &--small {
