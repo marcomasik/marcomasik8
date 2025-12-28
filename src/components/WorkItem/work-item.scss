@@ -15,6 +15,9 @@
         }
         &.work-item--expanded {
             width: 60%;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
         }
     }
     
