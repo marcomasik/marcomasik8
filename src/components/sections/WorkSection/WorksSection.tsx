@@ -41,6 +41,12 @@ export const WorksSection = () => {
     if (isExpanding) {
       // Save current scroll position when expanding
       scrollPositionRef.current = window.scrollY;
+    } else {
+      // Start scroll immediately when collapsing (parallel with transition)
+      window.scrollTo({
+        top: scrollPositionRef.current,
+        behavior: 'smooth'
+      });
     }
     
     setExpandedItem(expandedItem === itemId ? null : itemId);
@@ -49,14 +55,6 @@ export const WorksSection = () => {
     setTimeout(() => {
       if (packeryInstance.current) {
         packeryInstance.current.layout();
-      }
-      
-      // Restore scroll position when collapsing
-      if (!isExpanding) {
-        window.scrollTo({
-          top: scrollPositionRef.current,
-          behavior: 'smooth'
-        });
       }
     }, 350);
   };
