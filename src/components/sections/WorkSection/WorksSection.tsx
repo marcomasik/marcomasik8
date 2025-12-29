@@ -56,7 +56,7 @@ export const WorksSection = () => {
       if (packeryInstance.current) {
         packeryInstance.current.layout();
       }
-    }, 350);
+    }, 250); // 0.2s transition + 50ms buffer
   };
 
   return (
