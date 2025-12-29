@@ -45,14 +45,7 @@ export const WorksSection = () => {
     
     setExpandedItem(expandedItem === itemId ? null : itemId);
 
-    // Trigger layout immediately after state change
-    setTimeout(() => {
-      if (packeryInstance.current) {
-        packeryInstance.current.layout();
-      }
-    }, 0);
-
-    // And again after transition completes
+    // Trigger layout after transition completes
     setTimeout(() => {
       if (packeryInstance.current) {
         packeryInstance.current.layout();
