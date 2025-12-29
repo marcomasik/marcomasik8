@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 export const WorksSection = () => {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
   const packeryInstance = useRef<any>(null);
+  const scrollPositionRef = useRef<number>(0);
 
   useEffect(() => {
     // Dynamically import Packery only on client side
@@ -35,6 +36,13 @@ export const WorksSection = () => {
   }, []);
 
   const handleItemClick = (itemId: string) => {
+    const isExpanding = expandedItem !== itemId;
+    
+    if (isExpanding) {
+      // Save current scroll position when expanding
+      scrollPositionRef.current = window.scrollY;
+    }
+    
     setExpandedItem(expandedItem === itemId ? null : itemId);
 
     // Trigger layout immediately after state change
@@ -48,6 +56,14 @@ export const WorksSection = () => {
     setTimeout(() => {
       if (packeryInstance.current) {
         packeryInstance.current.layout();
+      }
+      
+      // Restore scroll position when collapsing
+      if (!isExpanding) {
+        window.scrollTo({
+          top: scrollPositionRef.current,
+          behavior: 'smooth'
+        });
       }
     }, 350);
   };
