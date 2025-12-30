@@ -84,19 +84,19 @@ export const CVSection = () => {
               <div className="cv-employer-references">
                 <ul>
                   <li>
-                    <a href="/documents/reference-idealo.pdf" download>
+                    <a href="/documents/Idealo_Abschlusszeugnis-Masik-Marco.pdf" download>
                       <div className="cv-document-icon">📄</div>
                       Idealo GmbH - Reference Letter
                     </a>
                   </li>
                   <li>
-                    <a href="/documents/reference-miles.pdf" download>
+                    <a href="/documents/Miles_Marco_Masik_Reference letter.pdf" download>
                       <div className="cv-document-icon">📄</div>
                       Miles Mobility GmbH - Reference Letter
                     </a>
                   </li>
                   <li>
-                    <a href="/documents/reference-plunet.pdf" download>
+                    <a href="/documents/Plunet_Arbeitszeugnis_Marco_Masik.pdf" download>
                       <div className="cv-document-icon">📄</div>
                       Plunet GmbH - Reference Letter
                     </a>
