@@ -34,8 +34,8 @@
                 display: flex;
                 gap: 2rem;
                 align-items: flex-start;
+                flex-direction: column;
                 @media (max-width: 767px) {
-                    flex-direction: column;
                     gap: 1rem;
                 }
             }
@@ -45,7 +45,6 @@
             }
             .work-item-case-study-video {
                 flex: 1;
-                max-width: 50%;
                 .work-item-video {
                     width: 100%;
                     height: auto;
