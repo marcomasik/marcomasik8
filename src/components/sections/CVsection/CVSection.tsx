@@ -81,6 +81,28 @@ export const CVSection = () => {
                 </ul>
               </div>
               <h2 className="cv-education-title">Employer references</h2>
+              <div className="cv-employer-references">
+                <ul>
+                  <li>
+                    <a href="/documents/reference-idealo.pdf" download>
+                      <div className="cv-document-icon">📄</div>
+                      Idealo GmbH - Reference Letter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/documents/reference-miles.pdf" download>
+                      <div className="cv-document-icon">📄</div>
+                      Miles Mobility GmbH - Reference Letter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/documents/reference-plunet.pdf" download>
+                      <div className="cv-document-icon">📄</div>
+                      Plunet GmbH - Reference Letter
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <h2 className="cv-education-title">Education</h2>
               <div className="cv-work-experience">
                 <h3>Beuth Hochschule für Technik Berlin</h3>
