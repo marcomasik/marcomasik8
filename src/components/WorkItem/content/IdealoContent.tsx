@@ -60,23 +60,37 @@ export const IdealoContent = () => {
           <div className="work-item-case-study-blob">
             <h5>Solution</h5>
             <div className="case-study-blob-row">
-              <div className="case-study-blob-image-container--many-images">
-                <img src="/images/Local_Offers_Overview.png" alt="Local Offers on offer page" />
-                <p>Local Offers embedded in the offer page</p>
-                <img src="/images/Local_Offer_Sidebar.png" alt="Local Offers in the sidebar" />
-                <p>Local Offers in the sidebar</p>
-                <img src="/images/Local_Offers_map.png" alt="Local Offers map view" />
-                <p>Local Offers map view</p>
-              </div>
+
               <div className="case-study-blob-row--paragraphs-under-each-other">
                 <p>We worked iteratively with Kanban, as it seemed the best way to manage the cross functional team. We conducted A/B tests 
                   to protect Idealo’s core KPIs (that makes the money) while improving our feature. 
                 </p>
-                <p>Our feature was accessible through
-                  a new tab on the main price comparison page (offer page). Another way to access it was through the top widget in the sidebar,
-                  that displayed cheap local alternative products near the user's location. Once opened the users saw a map with the local shops 
-                  and their prices, and the same query displayed in a list view. The map was interactive, with buttons to adjust the radius of the search.
-                </p>
+                <div id="idealo-solutions-paragraphs-and-images" className="case-study-blob-row--images-next-to-a-paragraph">
+                  <div className="case-study-blob-image-container--many-images">
+                    <div className="image-resizer-container">
+                        <img src="/images/Local_Offers_Overview.png" alt="Local Offers on offer page" />  
+                    </div>
+                    <p>Our feature was accessible through
+                        a new tab on the main price comparison page (offer page).
+                    </p>
+                  </div>
+                  <div className="case-study-blob-image-container--many-images">
+                    <div className="image-resizer-container">
+                      <img src="/images/Local_Offer_Sidebar.png" alt="Local Offers in the sidebar" /> 
+                    </div>
+                    <p>Another way to access it was through the top widget in the sidebar,
+                      that displayed cheap local alternative products near the user's location.</p>
+                  </div>
+                  <div className="case-study-blob-image-container--many-images">
+                    <div className="image-resizer-container">
+                      <img src="/images/Local_Offers_map.png" alt="Local Offers map view" /> 
+                    </div>
+                    <p>Once opened the users saw a map with the local shops 
+                        and their prices, and the same query displayed in a list view. The map was interactive, 
+                        with buttons to adjust the radius of the search.
+                    </p>
+                  </div>
+                </div>
                 <p>
                   The map was powered by React and Leaflet.js library, embedded in the page through JSPs. 
                   The logic to fetch the database was written in Java Spring Boot. We started to work on migrating the frontend to Typescript and Astro.js.
