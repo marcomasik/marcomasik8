@@ -341,6 +341,9 @@ export const CVSection = () => {
               </ul>
             </div>
           </div>
+          <a id="my-cv-to-download" href="/documents/Marco_Masik_CV.pdf" download>
+          📄 Download my CV as a pdf
+          </a>
         </div>
       </div>
     </section>
