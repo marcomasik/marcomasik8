@@ -1,7 +1,14 @@
 import { Textfit } from 'react-textfit';
+import { scrollToSection } from '../../../utils/scrollToSection';
 import "./start-section.scss";
 
 export const StartSection = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+    window.history.pushState(null, '', `/${sectionId}`);
+  };
+
   return (
     <section id="start" className="section">
       <div className="start-page-container">
@@ -13,9 +20,9 @@ export const StartSection = () => {
             </Textfit>
             <ul className="start-page-menu">
               <Textfit mode="single" min={8} max={120}>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#works" onClick={(e) => handleClick(e, 'works')}>WORKS</a></li>
+                <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li>
+                <li><a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a></li>
               </Textfit>
             </ul>
           </div>

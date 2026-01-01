@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { MenuBar, StartSection, WorksSection, CVSection, ContactSection } from '../components';
+import { scrollToSection } from '../utils/scrollToSection';
 
 export default function StartPage() {
   const router = useRouter();
@@ -49,10 +50,7 @@ export default function StartPage() {
   useEffect(() => {
     const hash = window.location.pathname.slice(1);
     if (hash && hash !== '') {
-      const element = document.getElementById(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => scrollToSection(hash), 100);
     }
   }, []);
 
