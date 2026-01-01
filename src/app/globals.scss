@@ -39,10 +39,12 @@ body {
   .menu-bar-container-inner {
     display: flex;
     align-items: center;
-    padding: 1rem 6rem;
+    padding: 1em 6em;
+    max-width: calc(100% - 12em);
     margin: 0 auto;
     @media (max-width: 767px) {
       padding: 1rem;
+      max-width: unset;
     }
     .menu-bar-logo {
       color: #000000;
