@@ -1,7 +1,7 @@
 export const getScrollOffset = (sectionId: string): { mobile: number; desktop: number } => {
   const offsets = {
-    'works': { mobile: 60, desktop: 80 },
-    'cv': { mobile: 60, desktop: 80 },
+    'works': { mobile: 70, desktop: 10 },
+    'cv': { mobile: 80, desktop: 25 },
     'contact': { mobile: 60, desktop: 80 },
     'start': { mobile: 0, desktop: 0 }
   };
