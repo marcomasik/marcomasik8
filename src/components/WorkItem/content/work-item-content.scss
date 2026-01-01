@@ -94,6 +94,21 @@
                     gap: 30px;
                     margin-top: 10px;
                     margin-bottom: 30px;
+                    .case-study-blob-row--image-text-row {
+                        display: flex;
+                        gap: 30px;
+                        .image-resizer-container{
+                            width: 50%;
+                            height: 180px;
+                            flex-shrink: 0;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 2em;
+                            }
+                        }
+                    }
                 }
                 .case-study-blob-image-container {
                     width: 50%;
