@@ -97,10 +97,16 @@
                     .case-study-blob-row--image-text-row {
                         display: flex;
                         gap: 30px;
+                        @media (max-width: 767px) {
+                            flex-direction: column;
+                        }
                         .image-resizer-container{
                             width: 50%;
                             height: 180px;
                             flex-shrink: 0;
+                            @media (max-width: 767px) {
+                                width: 100%;
+                            }
                             img {
                                 width: 100%;
                                 height: 100%;
