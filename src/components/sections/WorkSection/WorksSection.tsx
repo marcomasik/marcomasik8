@@ -41,6 +41,22 @@ export const WorksSection = () => {
     if (isExpanding) {
       // Save current scroll position when expanding
       scrollPositionRef.current = window.scrollY;
+      
+      // Scroll to the top of the clicked work item
+      setTimeout(() => {
+        const workItemElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
+        if (workItemElement) {
+          const isMobile = window.innerWidth <= 767;
+          const offset = isMobile ? 60 : 80; // Account for menubar
+          const elementPosition = workItemElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 50); // Small delay to ensure DOM is ready
     } else {
       // Start scroll immediately when collapsing (parallel with transition)
       window.scrollTo({
