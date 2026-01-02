@@ -18,6 +18,9 @@
             @media (max-width: 1080px) {
                 width: 100%;
             }
+            @media (min-width: 1081px) and (max-width: 1298px) {
+                 width: 100%;
+            }
         }
     }
     
@@ -78,7 +81,10 @@
     animation: fadeInContent 0.3s ease 0.3s forwards;
     @media (max-width: 767px) {
         margin-top: 0;
-    }    
+    }
+    @media (min-width: 1200px) and (max-width: 1298px) {
+        padding: 3em;
+    }
 
     h4 {
         margin-bottom: 0.5rem;
