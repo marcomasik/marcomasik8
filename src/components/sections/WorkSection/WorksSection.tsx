@@ -42,27 +42,32 @@ export const WorksSection = () => {
       // Save current scroll position when expanding
       scrollPositionRef.current = window.scrollY;
       
-      // Scroll to the top of the clicked work item
-      setTimeout(() => {
-        const workItemElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
-        if (workItemElement) {
-          const isMobile = window.innerWidth <= 767;
-          const offset = isMobile ? 120 : 80; // Account for menubar
-          const elementPosition = workItemElement.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - offset;
-          
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      }, 50); // Small delay to ensure DOM is ready
+      // Scroll to the top of the clicked work item (mobile only)
+      const isMobile = window.innerWidth <= 767;
+      if (isMobile) {
+        setTimeout(() => {
+          const workItemElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
+          if (workItemElement) {
+            const offset = 120; // Account for menubar on mobile
+            const elementPosition = workItemElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 50); // Small delay to ensure DOM is ready
+      }
     } else {
-      // Start scroll immediately when collapsing (parallel with transition)
-      window.scrollTo({
-        top: scrollPositionRef.current,
-        behavior: 'smooth'
-      });
+      // Start scroll immediately when collapsing (parallel with transition) - mobile only
+      const isMobile = window.innerWidth <= 767;
+      if (isMobile) {
+        window.scrollTo({
+          top: scrollPositionRef.current,
+          behavior: 'smooth'
+        });
+      }
     }
     
     setExpandedItem(expandedItem === itemId ? null : itemId);
