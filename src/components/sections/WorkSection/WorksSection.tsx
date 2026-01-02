@@ -39,8 +39,11 @@ export const WorksSection = () => {
     const isExpanding = expandedItem !== itemId;
     
     if (isExpanding) {
-      // Save current scroll position when expanding
-      scrollPositionRef.current = window.scrollY;
+      // Save current scroll position ONLY when opening from fully collapsed state
+      // Don't save when switching between items (page height is different)
+      if (expandedItem === null) {
+        scrollPositionRef.current = window.scrollY;
+      }
       
       // Scroll to the top of the clicked work item (mobile only)
       const isMobile = window.innerWidth <= 767;
