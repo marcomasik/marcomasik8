@@ -46,13 +46,17 @@ export const MilesContent = () => {
                                 I researched and proposed a modern decoupled setup with full creative freedom, 
                                 high performance, and easy content management.
                             </p>
-                            <ol><h6>Key requirements:</h6>
+                        </div>
+                        <div id="miles-solution-lists" className="case-study-blob-row">
+                            <ol>
+                                <h6>Key requirements:</h6>
                                 <li>Develop freely with React components and animations.</li>
                                 <li>Create reusable templates for campaigns.</li>
                                 <li>Provide a code-free CMS for the marketing team.</li>
                                 <li>Achieve top Lighthouse and SEO performance.</li>
                             </ol>
-                            <ul><h6>Chosen architecture:</h6>
+                            <ul>
+                                <h6>Chosen architecture:</h6>
                                 <li>Framework: Gatsby.js (React + SSR)</li>
                                 <li>CMS: Contentful (Headless CMS + GraphQL API)</li>
                                 <li>Hosting: Vercel (CDN + instant deploys)</li>
