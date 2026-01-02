@@ -47,7 +47,7 @@ export const WorksSection = () => {
         const workItemElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
         if (workItemElement) {
           const isMobile = window.innerWidth <= 767;
-          const offset = isMobile ? 60 : 80; // Account for menubar
+          const offset = isMobile ? 120 : 80; // Account for menubar
           const elementPosition = workItemElement.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - offset;
           
