@@ -37,6 +37,7 @@ export const WorksSection = () => {
   const handleItemClick = (itemId: string) => {
     const isExpanding = expandedItem !== itemId;
     const isSwitching = isExpanding && expandedItem !== null; // Switching between items
+    const isClosing = !isExpanding; // Closing current expanded item
     
     // Store scroll and clicked item position before change
     let scrollBefore = 0;
@@ -67,6 +68,18 @@ export const WorksSection = () => {
           window.scrollTo(0, scrollBefore + itemPositionDelta);
         }
       });
+    }
+    
+    // When closing, scroll to show the closed item
+    if (isClosing) {
+      setTimeout(() => {
+        const closedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
+        if (closedElement) {
+          const offset = 120; // Account for menubar
+          const elementTop = closedElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo(0, elementTop - offset);
+        }
+      }, 250); // After transition completes
     }
     
     // Trigger Packery layout after transition completes
