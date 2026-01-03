@@ -70,16 +70,19 @@ export const WorksSection = () => {
       });
     }
     
-    // When closing, scroll to show the closed item
+    // When closing, start scrolling immediately (during collapse transition)
     if (isClosing) {
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         const closedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
         if (closedElement) {
           const offset = 120; // Account for menubar
           const elementTop = closedElement.getBoundingClientRect().top + window.scrollY;
-          window.scrollTo(0, elementTop - offset);
+          window.scrollTo({
+            top: elementTop - offset,
+            behavior: 'smooth'
+          });
         }
-      }, 250); // After transition completes
+      });
     }
     
     // Trigger Packery layout after transition completes
