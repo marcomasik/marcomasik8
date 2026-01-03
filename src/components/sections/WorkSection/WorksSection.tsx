@@ -36,11 +36,25 @@ export const WorksSection = () => {
 
   const handleItemClick = (itemId: string) => {
     const isExpanding = expandedItem !== itemId;
+    const isSwitching = isExpanding && expandedItem !== null; // Switching between items
+    
+    // Only compensate when switching (not when opening first or closing)
+    const heightBefore = isSwitching ? document.documentElement.scrollHeight : 0;
+    const scrollBefore = isSwitching ? window.scrollY : 0;
     
     if (isExpanding) {
       setExpandedItem(itemId);
     } else {
       setExpandedItem(null);
+    }
+    
+    // Compensate immediately after React updates DOM (before CSS transition)
+    if (isSwitching) {
+      requestAnimationFrame(() => {
+        const heightAfter = document.documentElement.scrollHeight;
+        const heightDelta = heightAfter - heightBefore;
+        window.scrollTo(0, scrollBefore + heightDelta);
+      });
     }
     
     // Trigger Packery layout after transition completes
