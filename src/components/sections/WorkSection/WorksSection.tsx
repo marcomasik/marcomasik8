@@ -38,9 +38,17 @@ export const WorksSection = () => {
     const isExpanding = expandedItem !== itemId;
     const isSwitching = isExpanding && expandedItem !== null; // Switching between items
     
-    // Only compensate when switching (not when opening first or closing)
-    const heightBefore = isSwitching ? document.documentElement.scrollHeight : 0;
-    const scrollBefore = isSwitching ? window.scrollY : 0;
+    // Store scroll and clicked item position before change
+    let scrollBefore = 0;
+    let clickedItemTopBefore = 0;
+    
+    if (isSwitching) {
+      scrollBefore = window.scrollY;
+      const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
+      if (clickedElement) {
+        clickedItemTopBefore = clickedElement.getBoundingClientRect().top + window.scrollY;
+      }
+    }
     
     if (isExpanding) {
       setExpandedItem(itemId);
@@ -48,12 +56,16 @@ export const WorksSection = () => {
       setExpandedItem(null);
     }
     
-    // Compensate immediately after React updates DOM (before CSS transition)
+    // When switching, compensate for content shift
     if (isSwitching) {
       requestAnimationFrame(() => {
-        const heightAfter = document.documentElement.scrollHeight;
-        const heightDelta = heightAfter - heightBefore;
-        window.scrollTo(0, scrollBefore + heightDelta);
+        const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
+        if (clickedElement) {
+          const clickedItemTopAfter = clickedElement.getBoundingClientRect().top + window.scrollY;
+          const itemPositionDelta = clickedItemTopAfter - clickedItemTopBefore;
+          // Adjust scroll to keep visual position stable
+          window.scrollTo(0, scrollBefore + itemPositionDelta);
+        }
       });
     }
     
