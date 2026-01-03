@@ -7,7 +7,6 @@ import { useState, useEffect, useRef } from "react";
 export const WorksSection = () => {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
   const packeryInstance = useRef<any>(null);
-  const scrollPositionRef = useRef<number>(0);
 
   useEffect(() => {
     // Dynamically import Packery only on client side
@@ -37,57 +36,19 @@ export const WorksSection = () => {
 
   const handleItemClick = (itemId: string) => {
     const isExpanding = expandedItem !== itemId;
-    const isMobile = window.innerWidth <= 767;
     
     if (isExpanding) {
-      // Save current scroll position ONLY when opening from fully collapsed state
-      if (expandedItem === null) {
-        scrollPositionRef.current = window.scrollY;
-      }
-      
-      // Step 1: Close old + open new item (change state first)
       setExpandedItem(itemId);
-      
-      // Step 2: Wait for DOM to update, THEN scroll to the new item's position in the new layout
-      if (isMobile) {
-        setTimeout(() => {
-          const workItemElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
-          if (workItemElement) {
-            const offset = 120; // Account for menubar
-            const elementPosition = workItemElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-            
-            // Instant scroll to the new position (no smooth animation)
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'auto'
-            });
-          }
-        }, 50); // Wait for React state update and DOM render
-      }
-      
-      setTimeout(() => {
-        if (packeryInstance.current) {
-          packeryInstance.current.layout();
-        }
-      }, 250);
     } else {
-      // Closing an item - scroll back to saved position (mobile only)
-      if (isMobile) {
-        window.scrollTo({
-          top: scrollPositionRef.current,
-          behavior: 'auto'
-        });
-      }
-      
       setExpandedItem(null);
-      
-      setTimeout(() => {
-        if (packeryInstance.current) {
-          packeryInstance.current.layout();
-        }
-      }, 250);
     }
+    
+    // Trigger Packery layout after transition completes
+    setTimeout(() => {
+      if (packeryInstance.current) {
+        packeryInstance.current.layout();
+      }
+    }, 250);
   };
 
   return (
