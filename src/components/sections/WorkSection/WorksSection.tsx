@@ -39,11 +39,17 @@ export const WorksSection = () => {
     const isSwitching = isExpanding && expandedItem !== null; // Switching between items
     const isClosing = !isExpanding; // Closing current expanded item
     
+    // Check if switching between different sections (full-time vs freelance)
+    const fullTimeIds = ['idealo', 'miles'];
+    const currentIsFullTime = expandedItem ? fullTimeIds.includes(expandedItem) : false;
+    const clickedIsFullTime = fullTimeIds.includes(itemId);
+    const isCrossSectionSwitch = isSwitching && (currentIsFullTime !== clickedIsFullTime);
+    
     // Store scroll and clicked item position before change
     let scrollBefore = 0;
     let clickedItemTopBefore = 0;
     
-    if (isSwitching) {
+    if (isCrossSectionSwitch) {
       scrollBefore = window.scrollY;
       const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
       if (clickedElement) {
@@ -57,8 +63,8 @@ export const WorksSection = () => {
       setExpandedItem(null);
     }
     
-    // When switching, compensate for content shift
-    if (isSwitching) {
+    // Only compensate when switching between different sections
+    if (isCrossSectionSwitch) {
       requestAnimationFrame(() => {
         const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
         if (clickedElement) {
