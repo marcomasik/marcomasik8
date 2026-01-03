@@ -39,7 +39,7 @@
                     text-align: left;
                 }
                 p{
-                    margin-bottom: 1em;
+                    margin-bottom: 1.3em;
                     @media (max-width: 767px) {
                         font-size: 0.9rem;
                     }
@@ -68,6 +68,8 @@
                     img {
                         width: 20px;
                         height: auto;
+                        margin-top: 3px;
+                        margin-right: -5px;
                     }
                 }
             }
