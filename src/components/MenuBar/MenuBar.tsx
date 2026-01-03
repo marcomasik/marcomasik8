@@ -14,7 +14,9 @@ export const MenuBar = ({ isVisible }: MenuBarProps) => {
   return (
     <nav className={`menu-bar-container ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="menu-bar-container-inner">
-        <div className="menu-bar-logo">MARCO MASIK</div>
+        <a href="#start" className="menu-bar-logo" onClick={(e) => handleClick(e, 'start')}>
+          MARCO MASIK
+        </a>
         <ul className="menu-bar-list">
           <li><a href="#works" onClick={(e) => handleClick(e, 'works')}>WORKS</a></li>
           <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li>
