@@ -304,7 +304,7 @@ export const CVSection = () => {
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/GitHub_logo.png" alt="GitHub logo" />
+                    <img src="/images/logos/github_logo.png" alt="GitHub logo" />
                   </div>
                   GitHub
                 </li>
