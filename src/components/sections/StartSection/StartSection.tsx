@@ -22,11 +22,16 @@ export const StartSection = () => {
               MARCO<br />MASIK
             </h1>
             <ul className="start-page-menu">
-              <Textfit mode="single" min={8} max={120}>
+              <Textfit mode="single" min={8} max={120} className="menu-desktop">
                 <li><a href="#works" onClick={(e) => handleClick(e, 'works')}>WORKS</a></li>
                 <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li>
                 <li><a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a></li>
               </Textfit>
+              <div className="menu-mobile">
+                <li><a href="#works" onClick={(e) => handleClick(e, 'works')}>WORKS</a></li>
+                <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li>
+                <li><a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a></li>
+              </div>
             </ul>
           </div>
         </div>
