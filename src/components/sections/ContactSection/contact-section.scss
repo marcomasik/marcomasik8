@@ -20,8 +20,6 @@
             display: flex;
             gap: 2em;
             @media (max-width: 767px) {
-                flex-direction: column;
-                align-items: flex-start;
                 gap: 1.5em;
             }
             img {
@@ -29,7 +27,7 @@
                 width: 100px;
                 height: auto;
                 @media (max-width: 767px) {
-                    width: 80px;
+                    width: 120px;
                 }
             }
             .contact-container-inner-left {
