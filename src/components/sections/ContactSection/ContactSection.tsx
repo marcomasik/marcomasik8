@@ -20,7 +20,7 @@ export const ContactSection = () => {
                 </a>
                 <a href="https://github.com/marco-masik" target="_blank" rel="noopener noreferrer">
                   <div className="contact-container-inner-left-links-icon">
-                    <img src="/images/logos/gitHub_logo.png" alt="GitHub" />
+                    <img src="/images/logos/github_logo.png" alt="GitHub" />
                   </div>
                   GitHub
                 </a>
