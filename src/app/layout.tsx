@@ -84,8 +84,46 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marco Masik",
+    "url": "https://marcomasik.com",
+    "image": "https://marcomasik.com/images/avatar_marco.png",
+    "jobTitle": "Full-Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/marco-masik/",
+      "https://github.com/marco-masik"
+    ],
+    "knowsAbout": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Web Development",
+      "Frontend Development",
+      "Full-Stack Development"
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className={montserrat.variable}>
         {children}
       </body>
