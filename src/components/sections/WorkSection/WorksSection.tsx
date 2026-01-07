@@ -38,6 +38,7 @@ export const WorksSection = () => {
     const isExpanding = expandedItem !== itemId;
     const isSwitching = isExpanding && expandedItem !== null; // Switching between items
     const isClosing = !isExpanding; // Closing current expanded item
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
     
     // Check if switching between different sections (full-time vs freelance)
     const fullTimeIds = ['idealo', 'miles'];
@@ -45,11 +46,14 @@ export const WorksSection = () => {
     const clickedIsFullTime = fullTimeIds.includes(itemId);
     const isCrossSectionSwitch = isSwitching && (currentIsFullTime !== clickedIsFullTime);
     
+    // On mobile, compensate for all switches. On desktop, only cross-section switches.
+    const shouldCompensateScroll = isMobile ? isSwitching : isCrossSectionSwitch;
+    
     // Store scroll and clicked item position before change
     let scrollBefore = 0;
     let clickedItemTopBefore = 0;
     
-    if (isCrossSectionSwitch) {
+    if (shouldCompensateScroll) {
       scrollBefore = window.scrollY;
       const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
       if (clickedElement) {
@@ -63,8 +67,8 @@ export const WorksSection = () => {
       setExpandedItem(null);
     }
     
-    // Only compensate when switching between different sections
-    if (isCrossSectionSwitch) {
+    // Apply scroll compensation based on device
+    if (shouldCompensateScroll) {
       requestAnimationFrame(() => {
         const clickedElement = document.querySelector(`[data-work-item-id="${itemId}"]`);
         if (clickedElement) {
