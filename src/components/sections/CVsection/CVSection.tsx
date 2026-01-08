@@ -267,6 +267,12 @@ export const CVSection = () => {
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/google_cloud_logo.png" alt="Google Cloud logo" />
+                  </div>
+                  Google Cloud
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
                     <img src="/images/logos/mongodb_logo.png" alt="MongoDB logo" />
                   </div>
                   MongoDB
@@ -289,6 +295,12 @@ export const CVSection = () => {
                     <img src="/images/logos/chatgpt_logo.png" alt="ChatGPT logo" />
                   </div>
                   ChatGPT
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/gemini_logo.png" alt="Gemini logo" />
+                  </div>
+                  Gemini
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
