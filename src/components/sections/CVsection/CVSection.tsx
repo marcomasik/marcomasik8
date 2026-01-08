@@ -249,9 +249,15 @@ export const CVSection = () => {
                 {/* Backend world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
-                    <img src="/images/logos/java-spring-boot_logo.png" alt="Java Spring Boot logo" />
+                    <img src="/images/logos/java_logo.png" alt="Java logo" />
                   </div>
-                  Java Spring Boot
+                  Java
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/java-spring-boot_logo.png" alt="Spring Boot logo" />
+                  </div>
+                  Spring Boot
                 </li>
                 <li>
                   <div className="cv-work-tech-stack-icon">
