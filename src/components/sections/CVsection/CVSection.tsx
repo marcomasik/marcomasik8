@@ -291,6 +291,31 @@ export const CVSection = () => {
                   </div>
                   Docker
                 </li>
+                {/* Analytics & Experimentation */}
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/snowplow_logo.png" alt="Snowplow logo" />
+                  </div>
+                  Snowplow
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/growthbook_logo.png" alt="GrowthBook logo" />
+                  </div>
+                  GrowthBook
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/hotjar_logo.png" alt="Hotjar logo" />
+                  </div>
+                  Hotjar
+                </li>
+                <li>
+                  <div className="cv-work-tech-stack-icon">
+                    <img src="/images/logos/sitespect_logo.png" alt="SiteSpect logo" />
+                  </div>
+                  SiteSpect
+                </li>
                 {/* Tools world */}
                 <li>
                   <div className="cv-work-tech-stack-icon">
