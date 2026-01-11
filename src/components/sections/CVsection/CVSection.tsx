@@ -13,9 +13,8 @@ export const CVSection = () => {
                 <h4>2021 April - 2025 July</h4>
                 <ul>
                   <li>
-                    Developed and enhanced the "local offers"
-                    feature, integrating it into idealo's core
-                    price comparison application
+                    Developed and owned the "local offers" frontend, scaling it from experiment 
+                    to core product with year over year growth in clicks and revenue
                   </li>
                   <li>
                     Implemented Snowplow tracking 
@@ -48,9 +47,8 @@ export const CVSection = () => {
                     user flows
                   </li>
                   <li>
-                    Built a headless CMS using Contentful and
-                    Gatsby.js, enabling dynamic features and
-                    faster marketing content updates
+                    Built a headless CMS using Contentful and Gatsby.js, unlocking interactive frontend 
+                    capabilities with JavaScript and faster marketing content updates
                   </li>
                   <li>Partcipate in marketing meetings and provide technical insights</li>
                 </ul> 
