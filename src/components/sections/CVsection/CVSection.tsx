@@ -14,13 +14,13 @@ export const CVSection = () => {
                 <ul>
                   <li>
                     Developed and enhanced the "local offers"
-                    feature, integrating it into idealo’s core
+                    feature, integrating it into idealo's core
                     price comparison application
                   </li>
                   <li>
-                    Created a map based interface with
-                    location detection to display offers around
-                    the users’ location
+                    Implemented Snowplow tracking 
+                    and integrated it with GrowthBook for experimentation, 
+                    previously using SiteSpect
                   </li>
                   <li>
                     Managed CI/CD pipelines and AWS infrastructure for 
@@ -42,7 +42,11 @@ export const CVSection = () => {
                     deployment of a new website for Miles Mobility,
                     a prominent carsharing company in Germany
                   </li>
-                  <li>Analysing and comparing technologies for future website development</li>
+                  <li>
+                    Analyzed user behavior using Hotjar (now Contentsquare), 
+                    leveraging heatmaps and session recordings to optimize 
+                    user flows
+                  </li>
                   <li>
                     Built a headless CMS using Contentful and
                     Gatsby.js, enabling dynamic features and
