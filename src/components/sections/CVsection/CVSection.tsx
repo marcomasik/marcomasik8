@@ -37,9 +37,9 @@ export const CVSection = () => {
                 <h4>2020 July - 2020 December</h4>
                 <ul>
                   <li>
-                    Planning, development, and
-                    deployment of a new website for Miles Mobility,
-                    a prominent carsharing company in Germany
+                    Planned, developed, and deployed a new official 
+                    website for Miles Mobility, a prominent 
+                    carsharing company in Germany
                   </li>
                   <li>
                     Analyzed user behavior using Hotjar (now Contentsquare), 
@@ -50,7 +50,7 @@ export const CVSection = () => {
                     Built a headless CMS using Contentful and Gatsby.js, unlocking interactive frontend 
                     capabilities with JavaScript and faster marketing content updates
                   </li>
-                  <li>Partcipate in marketing meetings and provide technical insights</li>
+                  <li>Partcipated in marketing meetings and provide technical insights</li>
                 </ul> 
               </div>
               <div className="cv-work-experience">
