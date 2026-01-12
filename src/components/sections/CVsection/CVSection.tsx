@@ -17,9 +17,9 @@ export const CVSection = () => {
                     to core product with year over year growth in clicks and revenue
                   </li>
                   <li>
-                    Implemented Snowplow tracking 
-                    and integrated it with GrowthBook for experimentation, 
-                    previously using SiteSpect
+                    Implemented event tracking with Snowplow and ran A/B tests 
+                    using GrowthBook to optimize 
+                    features, previously using SiteSpect for experimentation
                   </li>
                   <li>
                     Managed CI/CD pipelines and AWS infrastructure for 
@@ -50,7 +50,7 @@ export const CVSection = () => {
                     Built a headless CMS using Contentful and Gatsby.js, unlocking interactive frontend 
                     capabilities with JavaScript and faster marketing content updates
                   </li>
-                  <li>Partcipated in marketing meetings and provide technical insights</li>
+                  <li>Participated in marketing meetings and provided technical insights</li>
                 </ul> 
               </div>
               <div className="cv-work-experience">
