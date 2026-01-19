@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.scss";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -128,6 +129,7 @@ export default function RootLayout({
       <body className={montserrat.variable}>
         {children}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
