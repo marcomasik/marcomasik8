@@ -13,8 +13,19 @@ export const CVSection = () => {
                 <h4>2021 April - 2025 July</h4>
                 <ul>
                   <li>
-                    Developed and owned the "local offers" frontend, scaling it from experiment 
-                    to core product with year over year growth in clicks and revenue
+                    Developed and owned the frontend of the feature "local offers", in a
+                    high-load, customer-facing application, that is comparing prices of
+                    product in the german market
+                  </li>
+                  <li>
+                    Scaled it from experiment to core product with an average yearly
+                    growth rate on our main KPI (clicks that leads to shop page) of 54%
+                  </li>
+                  <li>
+                    Tech stack: Java Spring Boot services generating offer lists, embedded
+                    TypeScript micro frontends built with Astro.js and React, all deployed
+                    on AWS (EKS, containerized microservices, managed databases, and
+                    supporting infrastructure). 
                   </li>
                   <li>
                     Implemented event tracking with Snowplow and ran A/B tests 
@@ -26,9 +37,9 @@ export const CVSection = () => {
                     multiple applications supporting local offers systems
                   </li>
                   <li>
-                    Mentored junior developers and 
-                    collaborated cross functionally with UX, data science, 
-                    and sales teams to deliver product requirements
+                    Mentored junior developers, performed technical interviews for job
+                    candidates and collaborated cross functionally with UX, data science,
+                    and sales colleagues to deliver product requirements
                   </li>
                 </ul> 
               </div>
@@ -68,20 +79,6 @@ export const CVSection = () => {
                   </li>
                 </ul>
               </div>
-              <div className="cv-work-experience">
-                <h3>Freelance web developer</h3>
-                <h4>2014 October - 2020 June</h4>
-                <ul>
-                  <li>
-                    Developed and maintained websites for clients
-                    using WordPress, HTML, CSS, and JavaScript  
-                  </li>
-                  <li>
-                    Implemented responsive design and SEO best practices
-                    to improve website performance and user experience
-                  </li>
-                </ul>
-              </div>
               <h2 className="cv-education-title">Employer references</h2>
               <div className="cv-employer-references">
                 <ul>
@@ -108,7 +105,7 @@ export const CVSection = () => {
               <h2 className="cv-education-title">Education</h2>
               <div className="cv-work-experience">
                 <h3>Beuth Hochschule für Technik Berlin</h3>
-                <h4>2011 - 2017 Medieninformatik Bachelor of Science</h4>
+                <h4>2014 - 2017 Medieninformatik Bachelor of Science</h4>
                 <ul>
                   <li>
                     Studied Media Informatics at the Beuth Hochschule für Technik Berlin
