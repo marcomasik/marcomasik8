@@ -10,7 +10,7 @@ export const CVSection = () => {
             <div className="cv-work-experiences-container">
               <div className="cv-work-experience">
                 <h3>Idealo GmbH // Frontend Engineer</h3>
-                <h4>2021 April - Present</h4>
+                <h4>2021 April - 2025 July</h4>
                 <ul>
                   <li>
                     Developed and owned the frontend of the feature "local offers", in a
@@ -82,12 +82,12 @@ export const CVSection = () => {
               <h2 className="cv-education-title">Employer references</h2>
               <div className="cv-employer-references">
                 <ul>
-                  {/* <li>
+                  <li>
                     <a href="/documents/Idealo_Abschlusszeugnis-Masik-Marco.pdf" download>
                       <div className="cv-document-icon">📄</div>
                       Idealo GmbH - Reference Letter
                     </a>
-                  </li> */}
+                  </li>
                   <li>
                     <a href="/documents/Miles_Marco_Masik_Reference letter.pdf" download>
                       <div className="cv-document-icon">📄</div>
