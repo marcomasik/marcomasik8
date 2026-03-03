@@ -19,7 +19,7 @@ export const MenuBar = ({ isVisible }: MenuBarProps) => {
         </a>
         <ul className="menu-bar-list">
           <li><a href="#works" onClick={(e) => handleClick(e, 'works')}>WORKS</a></li>
-          <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li>
+          {/* <li><a href="#cv" onClick={(e) => handleClick(e, 'cv')}>CV</a></li> */}
           <li><a href="#contact" onClick={(e) => handleClick(e, 'contact')}>CONTACT</a></li>
         </ul>
       </div>

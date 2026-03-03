@@ -59,7 +59,7 @@ export default function StartPage() {
       <MenuBar isVisible={showMenuBar} />
       <StartSection />
       <WorksSection />
-      <CVSection />
+      {/* <CVSection /> */}
       <ContactSection />
     </>
 
