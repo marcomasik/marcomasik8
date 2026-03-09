@@ -18,12 +18,12 @@ export const ContactSection = () => {
                   </div>
                   LinkedIn
                 </a>
-                <a href="https://github.com/marco-masik" target="_blank" rel="noopener noreferrer">
+                {/* <a href="https://github.com/marco-masik" target="_blank" rel="noopener noreferrer">
                   <div className="contact-container-inner-left-links-icon">
                     <img src="/images/logos/github_logo.png" alt="GitHub" />
                   </div>
                   GitHub
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="contact-container-inner-right">
